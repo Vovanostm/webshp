@@ -1,0 +1,4 @@
+User-agent: Yandex
+Allow: /
+Disallow: /styles
+Disallow: /scripts
