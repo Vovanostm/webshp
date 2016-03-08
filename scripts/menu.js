@@ -23,6 +23,7 @@ $(".m-n").click(function(event) {
   error: function(XMLHttpRequest, textStatus, errorThrown)
   {
       window.location.replace(_href);
+      console.log('error');
   }
       
      
