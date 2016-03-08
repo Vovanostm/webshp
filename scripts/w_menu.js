@@ -15,10 +15,11 @@ function aref_click(event)
   xhr.send();
   xhr.onreadystatechange = function() { // (3)
   if (xhr.readyState != 4) return;
-  alert('готово');
   if (xhr.status != 200) {
+    alert('ошибка');
     alert(xhr.status + ': ' + xhr.statusText);
   } else {
+    alert('готово');
     alert(xhr.responseText);
   }
   }
