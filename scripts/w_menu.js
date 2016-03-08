@@ -5,11 +5,10 @@ var
 function aref_click(event)
 {
   event.preventDefault();
-  alert(this);
   // 1. Создаём новый объект XMLHttpRequest
   var xhr = new XMLHttpRequest();
   // 2. Конфигурируем его: GET-запрос на URL 'phones.json'
-  var b_d = "name=get_page&page=index.html";
+  var b_d = "name=get_page&page="+this.getAttribute('href');
   xhr.open('POST', 'work.php?', true);
   xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
   xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
