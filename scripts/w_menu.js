@@ -4,6 +4,7 @@ var
 
 function aref_click(event)
 {
+  alert(document.getElementsByTagName("main")[0].innerHTML);
   event.preventDefault();
   // 1. Создаём новый объект XMLHttpRequest
   var xhr = new XMLHttpRequest();
