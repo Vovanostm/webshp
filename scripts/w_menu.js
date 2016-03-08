@@ -20,8 +20,8 @@ function aref_click(event)
     window.location.replace(_href);
     // alert(xhr.status + ': ' + xhr.statusText);
   } else {
-    document.getElementsByTagName("main")[0].innerHTML = '';
-    //document.getElementsByTagName("main")[0].innerHTML = xhr.responseText;
+    // document.getElementsByTagName("main")[0].innerHTML = '';
+    document.getElementsByTagName("main")[0].innerHTML = xhr.responseText;
     // alert(xhr.responseText);
   }
   }
