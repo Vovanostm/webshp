@@ -38,14 +38,14 @@ var
 
 // }
 
-var hrefs = main_nav.getElementsByTagName("a");
-console.log (hrefs);
-console.log (hrefs[0]);
-for (var i = 0; i < hrefs.length; i++)
-{
- console.log(hrefs[i].innerHTML);
- hrefs[i].addEventListener("click", aref_click);
-}
+// var hrefs = main_nav.getElementsByTagName("a");
+// console.log (hrefs);
+// console.log (hrefs[0]);
+// for (var i = 0; i < hrefs.length; i++)
+// {
+//  console.log(hrefs[i].innerHTML);
+//  hrefs[i].addEventListener("click", aref_click);
+// }
 
 
 var menu_bottom = main_nav.getBoundingClientRect().bottom + window.pageYOffset;
