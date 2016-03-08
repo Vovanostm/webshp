@@ -4,7 +4,6 @@ var
 
 function aref_click(event)
 {
-  alert(document.getElementsByTagName("main")[0].innerHTML);
   event.preventDefault();
   // 1. Создаём новый объект XMLHttpRequest
   var xhr = new XMLHttpRequest();
@@ -21,8 +20,7 @@ function aref_click(event)
     window.location.replace(_href);
     // alert(xhr.status + ': ' + xhr.statusText);
   } else {
-    
-
+    document.getElementsByTagName("main")[0].innerHTML = '';
     document.getElementsByTagName("main")[0].innerHTML = xhr.responseText;
     // alert(xhr.responseText);
   }
