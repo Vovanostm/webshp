@@ -1,7 +1,9 @@
 <?php
+echo "hello!";
 if (count($_POST) > 0)//--Если были приняты данные из HTML-формы
 {
 	echo $_POST;
+
 	$name = $_POST['name'];
 	// echo ("page..$name");
 	if ($name == "get_page") {
