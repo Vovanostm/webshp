@@ -21,7 +21,8 @@ function aref_click(event)
     // alert(xhr.status + ': ' + xhr.statusText);
   } else {
     
-    alert(xhr.responseText);
+    document.getElementsByTagName(main)[0].innerHTML = xhr.responseText;
+    // alert(xhr.responseText);
   }
   }
 }

@@ -1,5 +1,5 @@
 <?php
-echo "hello!";
+// echo "hello!";
 if (count($_POST) > 0)//--Если были приняты данные из HTML-формы
 {
 	echo $_POST;
