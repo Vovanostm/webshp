@@ -2,30 +2,30 @@ var
    scrll_old = 0,
    scrll = 0;
 
-function aref_click(event)
-{
-  alert("clicked");
-  event.preventDefault();
-  // 1. Создаём новый объект XMLHttpRequest
-  var xhr = new XMLHttpRequest();
+// function aref_click(event)
+// {
+//   alert("clicked");
+//   event.preventDefault();
+//   // 1. Создаём новый объект XMLHttpRequest
+//   var xhr = new XMLHttpRequest();
 
-  // 2. Конфигурируем его: GET-запрос на URL 'phones.json'
-  xhr.open('POST', 'https://webshp.ru/work.php', true);
-  xhr.setRequestHeader('Content-Type', 'html');
-  // 3. Отсылаем запрос
-  xhr.send("name=get_page&page=index.html");
+//   // 2. Конфигурируем его: GET-запрос на URL 'phones.json'
+//   xhr.open('POST', 'https://webshp.ru/work.php', true);
+//   xhr.setRequestHeader('Content-Type', 'html');
+//   // 3. Отсылаем запрос
+//   xhr.send("name=get_page&page=index.html");
 
-  xhr.onreadystatechange = function() { // (3)
-  if (xhr.readyState != 4) return;
+//   xhr.onreadystatechange = function() { // (3)
+//   if (xhr.readyState != 4) return;
   
-  alert('готово');
+//   alert('готово');
 
-  if (xhr.status != 200) {
-    alert(xhr.status + ': ' + xhr.statusText);
-  } else {
-    alert(xhr.responseText);
-  }
-}
+//   if (xhr.status != 200) {
+//     alert(xhr.status + ': ' + xhr.statusText);
+//   } else {
+//     alert(xhr.responseText);
+//   }
+// }
 
   // // 4. Если код ответа сервера не 200, то это ошибка
   // if (xhr.status != 200) {
@@ -36,7 +36,7 @@ function aref_click(event)
   //   alert( xhr.responseText ); // responseText -- текст ответа.
   // }
 
-}
+// }
 
 var hrefs = main_nav.getElementsByTagName("a");
 console.log (hrefs);
