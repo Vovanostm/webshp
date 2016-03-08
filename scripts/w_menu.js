@@ -5,6 +5,7 @@ var
 function aref_click(event)
 {
   event.preventDefault();
+  alert(this);
   // 1. Создаём новый объект XMLHttpRequest
   var xhr = new XMLHttpRequest();
   // 2. Конфигурируем его: GET-запрос на URL 'phones.json'
@@ -17,7 +18,7 @@ function aref_click(event)
   xhr.onreadystatechange = function() { // (3)
   if (xhr.readyState != 4) return;
   if (xhr.status != 200) {
-    window.location.replace(_href);
+    // window.location.replace(_href);
     // alert(xhr.status + ': ' + xhr.statusText);
   } else {
     // document.getElementsByTagName("main")[0].innerHTML = '';
