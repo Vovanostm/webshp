@@ -4,15 +4,15 @@ var
 
 function aref_click(event)
 {
-  alert("clicked");
   event.preventDefault();
   // 1. Создаём новый объект XMLHttpRequest
   var xhr = new XMLHttpRequest();
   // 2. Конфигурируем его: GET-запрос на URL 'phones.json'
-  xhr.open('POST', 'https://webshp.ru/work.php', true);
+  var b_d = "name=get_page&page=index.html";
+  xhr.open('GET', 'https://webshp.ru/work.php?'+b_d, true);
   xhr.setRequestHeader('Content-Type', 'html');
   // 3. Отсылаем запрос
-  xhr.send("name=get_page&page=index.html");
+  xhr.send();
   xhr.onreadystatechange = function() { // (3)
   if (xhr.readyState != 4) return;
   alert('готово');
