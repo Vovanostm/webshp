@@ -4,22 +4,20 @@ var
 
 function aref_click(event)
 {
-  event.preventDefault();
   // 1. Создаём новый объект XMLHttpRequest
   var xhr = new XMLHttpRequest();
   // 2. Конфигурируем его: GET-запрос на URL 'phones.json'
   var b_d = "name=get_page&page=index.html";
-  xhr.open('GET', 'work.php?'+b_d, true);
+  xhr.open('POST', 'work.php?', true);
   xhr.setRequestHeader('Content-Type', 'html');
   // 3. Отсылаем запрос
-  xhr.send();
+  xhr.send(b_d);
   xhr.onreadystatechange = function() { // (3)
   if (xhr.readyState != 4) return;
   if (xhr.status != 200) {
-    alert('ошибка');
     alert(xhr.status + ': ' + xhr.statusText);
   } else {
-    alert('готово');
+    event.preventDefault();
     alert(xhr.responseText);
   }
   }
