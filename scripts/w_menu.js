@@ -10,7 +10,8 @@ function aref_click(event)
   // 2. Конфигурируем его: GET-запрос на URL 'phones.json'
   var b_d = "name=get_page&page=index.html";
   xhr.open('POST', 'work.php?', true);
-  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
   // 3. Отсылаем запрос
   xhr.send(b_d);
   xhr.onreadystatechange = function() { // (3)
