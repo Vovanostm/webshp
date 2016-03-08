@@ -1,0 +1,42 @@
+.crs
+{
+	font-size: 110%;
+	display: inline-block;
+	/*background-color: #F0F;*/
+	padding: 10px;
+	width: 30%;
+}
+
+.crs>header
+{
+	text-align: center;
+}
+
+.hch,.hch>label
+{
+	margin: 10px;
+	
+}
+
+
+.hch>input
+{
+	display: none;
+}
+
+.hch>ul
+{
+	/*display: none;*/
+	height: 0;
+	overflow: hidden;
+	-webkit-transition: all .4s;
+	   -moz-transition: all .4s;
+	    -ms-transition: all .4s;
+	     -o-transition: all .4s;
+	        transition: all .4s;
+}
+.hch>input:checked~ul
+{
+	/*display: block;*/
+	height: 140px;
+}
