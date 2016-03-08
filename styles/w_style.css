@@ -116,7 +116,7 @@ h3
   nav {
     width: 96%;
     left: 2%;
-    display: none;
+    /* display: none; */
   }
   main
   {
