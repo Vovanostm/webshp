@@ -18,7 +18,7 @@ if (count($_POST) > 0)//--Если были приняты данные из HTM
 		// $scd = scandir("/");
     // foreach ($scd as $fl) {
     // 	echo $fl;
-    }
+    // }
 		// echo("haha")
 	}
 }
