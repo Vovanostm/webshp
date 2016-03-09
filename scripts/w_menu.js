@@ -10,7 +10,7 @@ function navigate(_href)
   for (var i=0; i < _href.length; i++)
   {
     if ((i == 0)&&(_href[i]!="/")) up_hrf+=_href[i];
-    else if(i>0) up_hrf+=hrf[i];
+    else if(i>0) up_hrf+=_href[i];
   }
   var b_d = "name=get_page&page="+up_hrf
   var xhr = new XMLHttpRequest();
