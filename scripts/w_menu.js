@@ -25,6 +25,7 @@ function navigate(_href)
     } else {
     // document.getElementsByTagName("main")[0].innerHTML = '';
       document.getElementsByTagName("main")[0].innerHTML = xhr.responseText;
+      update_in_arefs();
     // alert(xhr.responseText);
   }
   }
@@ -42,7 +43,15 @@ function aref_click(event)
 window.addEventListener("popstate", function(e) {
     navigate(location.pathname);
 }, false);
-
+function update_in_arefs(){
+  var hrefs = document.getElementsByName("in_aref");
+  for (var i = 0; i < hrefs.length; i++)
+  {
+   console.log(hrefs[i].innerHTML);
+   hrefs[i].addEventListener("click", aref_click);
+  }
+}
+update_in_arefs();
 
   // // 4. Если код ответа сервера не 200, то это ошибка
   // if (xhr.status != 200) {
@@ -62,12 +71,7 @@ for (var i = 0; i < hrefs.length; i++)
  hrefs[i].addEventListener("click", aref_click);
 }
 
-var hrefs = document.getElementsByName("in_aref");
-for (var i = 0; i < hrefs.length; i++)
-{
- console.log(hrefs[i].innerHTML);
- hrefs[i].addEventListener("click", aref_click);
-}
+
 
 
 var menu_bottom = main_nav.getBoundingClientRect().bottom + window.pageYOffset;
