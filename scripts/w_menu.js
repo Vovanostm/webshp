@@ -11,9 +11,9 @@ function aref_click(event)
   // 2. Конфигурируем его: GET-запрос на URL 'phones.json'
 
   var up_hrf="";
-  for (var i=0; i < hrf.length; i++)
+  for (var i=1; i < hrf.length; i++)
   {
-    if ((i == 0)&&(hrf[i]!='/')) up_hrf+=hrf[i];
+    if ((i == 1)&&(hrf[i]!="/")) up_hrf+=hrf[i];
     else up_hrf+=hrf[i];
   }
   alert(up_hrf);
