@@ -13,7 +13,7 @@ if (count($_POST) > 0)//--Если были приняты данные из HTM
 
 		// echo ($template);
 		echo ($matches[1]);
-		echo file_get_contents('*');
+		echo glob('*');
 		// echo("haha")
 	}
 }
