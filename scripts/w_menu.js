@@ -24,7 +24,6 @@ function navigate(_href)
     // alert(xhr.status + ': ' + xhr.statusText);
     } else {
     // document.getElementsByTagName("main")[0].innerHTML = '';
-      window.history.pushState(stateObj,null,hrf);
       document.getElementsByTagName("main")[0].innerHTML = xhr.responseText;
     // alert(xhr.responseText);
   }
@@ -37,6 +36,7 @@ function aref_click(event)
   event.preventDefault();
   hrf = this.getAttribute('href');
  navigate(hrf);
+ window.history.pushState(stateObj,null,hrf);
 }
 window.addEventListener("popstate", function(e) {
     navigate(location.pathname);
