@@ -35,7 +35,7 @@ function aref_click(event)
 {
   event.preventDefault();
   hrf = this.getAttribute('href');
-  alet(hrf);
+  alert(hrf);
  navigate(hrf);
  window.history.pushState(stateObj,null,hrf);
 }
