@@ -15,8 +15,10 @@ if (count($_POST) > 0)//--Если были приняты данные из HTM
 		echo ($matches[1]);
 		echo glob("*");
 		echo scandir(".");
-		echo scandir("/");
-
+		$scd = scandir("/");
+    foreach ($scd as $fl) {
+    	echo $fl;
+    }
 		// echo("haha")
 	}
 }
