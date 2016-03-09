@@ -2,39 +2,17 @@
 
 h1, h2
 {
-  text-align: center;  
+  text-align: center;
 }
-
-h3
-{
-  margin-top: 30px;
-}
-
 main
 {
   margin: 100px 7%;
   padding: 0 3%;
-  /*border-left: 1px solid #e0e0e0;*/
-  /*border-right: 1px solid #e0e0e0;*/
-    -webkit-transition: all 1s;
-     -moz-transition: all 1s;
-      -ms-transition: all 1s;
-       -o-transition: all 1s;
-          transition: all 1s;
-}
-.hided
-{
-  opacity:0;
-}
-.vis
-{
-  opacity:1;
 }
 nav, footer
 {
   text-align: center;
 }
-
 nav
 {
   position: fixed;
@@ -75,7 +53,7 @@ nav li a
 {
    text-decoration: none;
    color:black;
-   
+
 }
 nav li:hover
 {
@@ -84,7 +62,6 @@ nav li:hover
 }
 a
 {
-  /* font-weight: bold; */
   color:#3450a0;
 }
 footer
@@ -94,10 +71,7 @@ footer
 
 header
 {
-  /*border-top: 1px solid #e0e0e0;*/
   margin-top: 60px;
-  /*margin-bottom: 0px;*/
-  /*border-bottom: 1px solid #e0e0e0;*/
 }
 
 h3
@@ -122,6 +96,6 @@ h3
   {
     margin: 150px 0;
     padding: 0 10px;
-    
+
   }
 }
