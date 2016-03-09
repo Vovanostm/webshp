@@ -78,11 +78,6 @@ window.onscroll = function() {
   // document.getElementById('showScroll').innerHTML = scrolled + 'px';
 }
 
-window.addEventListener("popstate", function(e) {
-  alert();
-
-}
-
 
 
 
