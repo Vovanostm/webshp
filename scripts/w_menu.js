@@ -16,6 +16,7 @@ function aref_click(event)
     if ((i == 0)&&(hrf[i]!='/')) up_hrf+=hrf[i];
     else up_hrf+=hrf[i];
   }
+  alert(up_hrf);
   var b_d = "name=get_page&page="+up_hrf
   alert(up_hrf);
   xhr.open('POST', '/work.php?', true);
