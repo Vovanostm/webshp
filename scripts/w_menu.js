@@ -9,9 +9,14 @@ function aref_click(event)
   var xhr = new XMLHttpRequest();
   hrf = this.getAttribute('href');
   // 2. Конфигурируем его: GET-запрос на URL 'phones.json'
-  var b_d = "name=get_page&page="+hrf
-  if (hrf[0]="/") hrf[0]=" ";
-  alert(hrf);
+
+  var up_hrf="";
+  for (var i=0; i < hrf.length; i++)
+  {
+    if ((i == 0)&&(href[i]!='/') up_hrf+=hrf[i];
+  }
+  var b_d = "name=get_page&page="+up_hrf
+  alert(up_hrf);
   xhr.open('POST', '/work.php?', true);
   xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
   xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
