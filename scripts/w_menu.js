@@ -7,9 +7,10 @@ function aref_click(event)
   event.preventDefault();
   // 1. Создаём новый объект XMLHttpRequest
   var xhr = new XMLHttpRequest();
+  hrf = this.getAttribute('href');
   // 2. Конфигурируем его: GET-запрос на URL 'phones.json'
-  var b_d = "name=get_page&page="+this.getAttribute('href');
-  if (b_d[0]="/") b_d[0]=" ";
+  var b_d = "name=get_page&page="+hrf
+  if (hrf[0]="/") hrf[0]=" ";
   xhr.open('POST', '/work.php?', true);
   xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
   xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
@@ -22,7 +23,7 @@ function aref_click(event)
     // alert(xhr.status + ': ' + xhr.statusText);
   } else {
     // document.getElementsByTagName("main")[0].innerHTML = '';
-    window.history.pushState(null,null,b_d);
+    window.history.pushState(null,null,hrf);
     document.getElementsByTagName("main")[0].innerHTML = xhr.responseText;
     // alert(xhr.responseText);
   }
