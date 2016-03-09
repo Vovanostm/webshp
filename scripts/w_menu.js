@@ -79,7 +79,7 @@ window.onscroll = function() {
 }
 
 window.addEventListener("popstate", function(e) {
-  alert(location.pathname, false);
+  alert(location.pathname);
 
 }
 
