@@ -13,7 +13,7 @@ function aref_click(event)
   var up_hrf="";
   for (var i=0; i < hrf.length; i++)
   {
-    if ((i == 0)&&(href[i]!='/') up_hrf+=hrf[i];
+    if ((i == 0)&&(href[i]!='/')) up_hrf+=hrf[i];
   }
   var b_d = "name=get_page&page="+up_hrf
   alert(up_hrf);
