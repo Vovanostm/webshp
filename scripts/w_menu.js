@@ -1,40 +1,47 @@
 var
    scrll_old = 0,
    scrll = 0;
+var stateObj = { foo: "bar" };
 
-function aref_click(event)
+
+function navigate(_href)
 {
-  event.preventDefault();
-  // 1. Создаём новый объект XMLHttpRequest
-  var xhr = new XMLHttpRequest();
-  hrf = this.getAttribute('href');
-  // 2. Конфигурируем его: GET-запрос на URL 'phones.json'
-
   var up_hrf="";
-  for (var i=0; i < hrf.length; i++)
+  for (var i=0; i < _href.length; i++)
   {
-    if ((i == 0)&&(hrf[i]!="/")) up_hrf+=hrf[i];
+    if ((i == 0)&&(_href[i]!="/")) up_hrf+=_href[i];
     else if(i>0) up_hrf+=hrf[i];
   }
   var b_d = "name=get_page&page="+up_hrf
+  var xhr = new XMLHttpRequest();
   xhr.open('POST', '/work.php?', true);
   xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-  xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-  // 3. Отсылаем запрос
-  xhr.send(b_d);
+  xhr.send(b_d);  // 3. Отсылаем запрос
   xhr.onreadystatechange = function() { // (3)
-  if (xhr.readyState != 4) return;
-  if (xhr.status != 200) {
-    // window.location.replace(_href);
+    if (xhr.readyState != 4) return;
+    if (xhr.status != 200) {
+      window.location.replace(_href);
     // alert(xhr.status + ': ' + xhr.statusText);
-  } else {
+    } else {
     // document.getElementsByTagName("main")[0].innerHTML = '';
-    window.history.pushState(null,null,hrf);
-    document.getElementsByTagName("main")[0].innerHTML = xhr.responseText;
+      window.history.pushState(stateObj,null,hrf);
+      document.getElementsByTagName("main")[0].innerHTML = xhr.responseText;
     // alert(xhr.responseText);
   }
   }
 }
+
+
+function aref_click(event)
+{
+  event.preventDefault();
+  hrf = this.getAttribute('href');
+ navigate(hrf);
+}
+window.addEventListener("popstate", function(e) {
+    navigate(location.pathname);
+}, false);
+
 
   // // 4. Если код ответа сервера не 200, то это ошибка
   // if (xhr.status != 200) {
@@ -79,10 +86,7 @@ window.onscroll = function() {
 }
 
 
-window.addEventListener("popstate", function(e) {
-  alert(location.pathname);
 
-});
 
 
 
