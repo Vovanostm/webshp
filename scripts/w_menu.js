@@ -36,9 +36,8 @@ function aref_click(event)
 {
   event.preventDefault();
   hrf = this.getAttribute('href');
-  alert(hrf);
- navigate(hrf);
- window.history.pushState(stateObj,null,hrf);
+  navigate(hrf);
+  window.history.pushState(stateObj,null,hrf);
 }
 window.addEventListener("popstate", function(e) {
     navigate(location.pathname);
