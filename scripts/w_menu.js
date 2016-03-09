@@ -61,6 +61,13 @@ for (var i = 0; i < hrefs.length; i++)
  hrefs[i].addEventListener("click", aref_click);
 }
 
+var hrefs = document.getElementsByName("in_aref");
+for (var i = 0; i < hrefs.length; i++)
+{
+ console.log(hrefs[i].innerHTML);
+ hrefs[i].addEventListener("click", aref_click);
+}
+
 
 var menu_bottom = main_nav.getBoundingClientRect().bottom + window.pageYOffset;
 
