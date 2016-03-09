@@ -14,6 +14,7 @@ function aref_click(event)
   for (var i=0; i < hrf.length; i++)
   {
     if ((i == 0)&&(hrf[i]!='/')) up_hrf+=hrf[i];
+    else up_hrf+=hrf[i];
   }
   var b_d = "name=get_page&page="+up_hrf
   alert(up_hrf);
