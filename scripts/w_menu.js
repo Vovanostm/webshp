@@ -33,7 +33,6 @@ function aref_click(event)
     // document.getElementsByTagName("main")[0].innerHTML = '';
     window.history.pushState(null,null,hrf);
     document.getElementsByTagName("main")[0].innerHTML = xhr.responseText;
-    alert(xhr.responseText);
     // alert(xhr.responseText);
   }
   }

@@ -10,14 +10,14 @@ if (count($_POST) > 0)//--Если были приняты данные из HTM
 		$content  = file_get_contents($page);
 		$template = '|<main>(.+)</main>|isU';
 		$result   = preg_match($template, $content, $matches);
-
-		// echo ($template);
 		echo ($matches[1]);
-		echo glob("*");
-		echo scandir(".");
-		$scd = scandir("/");
-    foreach ($scd as $fl) {
-    	echo $fl;
+		// echo ($template);
+		//
+		// echo glob("*");
+		// echo scandir(".");
+		// $scd = scandir("/");
+    // foreach ($scd as $fl) {
+    // 	echo $fl;
     }
 		// echo("haha")
 	}
