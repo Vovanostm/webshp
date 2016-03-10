@@ -73,14 +73,13 @@ for (var i = 0; i < hrefs.length; i++)
 
 
 var menu_bottom = main_nav.getBoundingClientRect().bottom + window.pageYOffset;
-
+document.getElementsByTagName("main")[0].setAttribute('style', "top:"+menu_bottom+10+"px");
 window.onscroll = function() {
   scrll = window.pageYOffset;
   if (scrll < scrll_old)
   {
     console.log('up');
     main_nav.setAttribute('style', "top:0px");
-
   }
   else
   {
