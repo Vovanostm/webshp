@@ -17,7 +17,14 @@ function navigate(_href)
   var xhr = new XMLHttpRequest();
   xhr.open('POST', '/work.php?', true);
   xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-  xhr.send(b_d);  // 3. Отсылаем запрос
+  try
+  {
+    xhr.send(b_d);
+  }
+  catch
+  {
+    alert("error");
+  }
   xhr.onreadystatechange = function() { // (3)
     if (xhr.readyState != 4) return;
     if (xhr.status != 200) {
