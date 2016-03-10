@@ -75,26 +75,3 @@ footer
 {
   margin-top:50px;
 }
-
-
-
-
-
-
-@media all and (max-width: 800px)
-{
-  body
-  {
-    font-size: 130%;
-  }
-  nav {
-    width: 96%;
-    left: 2%;
-    /* display: none; */
-  }
-  main
-  {
-    margin: 150px 0;
-    padding: 0 10px;
-  }
-}
