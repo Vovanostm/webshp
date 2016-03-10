@@ -97,7 +97,13 @@ footer
     margin: 150px 0;
     padding: 0 10px;
   }
-  h1, h2, h3 {
+  h1 {
     font-size: 130%;
+  }
+  h2 {
+    font-size: 125%;
+  }
+  h3 {
+    font-size: 120%;
   }
 }
