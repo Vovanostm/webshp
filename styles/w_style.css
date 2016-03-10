@@ -97,4 +97,7 @@ footer
     margin: 150px 0;
     padding: 0 10px;
   }
+  header{
+    font-size: 90%;
+  }
 }
