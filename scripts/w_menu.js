@@ -21,7 +21,7 @@ function navigate(_href)
   {
     xhr.send(b_d);
   }
-  catch
+  catch (err)
   {
     alert("error");
   }
