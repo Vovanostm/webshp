@@ -93,7 +93,7 @@ footer
     left: 2%;
   }
   nav li{
-    width: 100px;
+    width: 80px;
   }
   main
   {
@@ -104,9 +104,9 @@ footer
     font-size: 130%;
   }
   h2 {
-    font-size: 120%;
+    font-size: 115%;
   }
   h3 {
-    font-size: 110%;
+    font-size: 100%;
   }
 }
