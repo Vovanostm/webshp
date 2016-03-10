@@ -88,9 +88,12 @@ footer
     font-size: 120%;
   }
   nav {
+    font-size: 100%;
     width: 96%;
     left: 2%;
-    /* display: none; */
+  }
+  nav li{
+    width: 100px;
   }
   main
   {
