@@ -3,12 +3,19 @@ var
    scrll = 0;
 var stateObj = { foo: "bar" };
 
+function update_in_arefs(){
+  var hrefs = document.getElementsByName("in_aref");
+  for (var i = 0; i < hrefs.length; i++)
+  {
+   console.log(hrefs[i].innerHTML);
+   hrefs[i].addEventListener("click", aref_click);
+  }
+}
 
 function navigate(_href)
 {
   var up_hrf="";
   if (_href == "/") _href = "index.html";
-  alert(_href);
   for (var i=0; i < _href.length; i++)
   {
     if ((i == 0)&&(_href[i]!="/")) up_hrf+=_href[i];
@@ -17,6 +24,8 @@ function navigate(_href)
   var b_d = "name=get_page&page="+up_hrf
   var xhr = new XMLHttpRequest();
   xhr.open('POST', '/work.php?', true);
+  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  xhr.send(b_d);  // 3. Отсылаем запрос
   xhr.onreadystatechange = function() { // (3)
     if (xhr.readyState != 4) return;
     if (xhr.status != 200) {
@@ -42,14 +51,7 @@ function aref_click(event)
 window.addEventListener("popstate", function(e) {
     navigate(location.pathname);
 }, false);
-function update_in_arefs(){
-  var hrefs = document.getElementsByName("in_aref");
-  for (var i = 0; i < hrefs.length; i++)
-  {
-   console.log(hrefs[i].innerHTML);
-   hrefs[i].addEventListener("click", aref_click);
-  }
-}
+
 update_in_arefs();
 
   // // 4. Если код ответа сервера не 200, то это ошибка
@@ -74,13 +76,14 @@ for (var i = 0; i < hrefs.length; i++)
 
 
 var menu_bottom = main_nav.getBoundingClientRect().bottom + window.pageYOffset;
-document.getElementsByTagName("main")[0].setAttribute('style', "top:"+menu_bottom+30+"px");
+
 window.onscroll = function() {
   scrll = window.pageYOffset;
   if (scrll < scrll_old)
   {
     console.log('up');
     main_nav.setAttribute('style', "top:0px");
+
   }
   else
   {
