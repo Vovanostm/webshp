@@ -21,6 +21,8 @@ function navigate(_href)
     if ((i == 0)&&(_href[i]!="/")) up_hrf+=_href[i];
     else if(i>0) up_hrf+=_href[i];
   }
+  if ((_href[_href.length-1]!="l")||(_href[_href.length-1]!="m"))
+    up_hrf+=index.html;
   var b_d = "name=get_page&page="+up_hrf
   var xhr = new XMLHttpRequest();
   xhr.open('POST', '/work.php?', true);
