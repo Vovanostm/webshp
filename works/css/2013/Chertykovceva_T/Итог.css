@@ -1,0 +1,77 @@
+body
+{background-image:url('фон.jpg');
+ 
+}
+Div
+{ width:900px;
+ height:auto;
+ background-color:rgba(237,215,247,0.5);
+ position:relative;
+ left:25%;
+ margin:40px;
+ border:100px;
+ border-style:grove;
+ border-color:722b70;
+ padding:20px;
+}
+
+IMG
+{  background: invisible repeat-y url("1.png");
+}
+
+font
+{font-family:'Tahoma';
+  font-size:medium;
+}
+
+#menu11 ul {
+    list-style:none;
+    font-family:'Gill Sans','Gill Sans MT';
+    text-transform:uppercase;
+    font-size: 28px;
+    line-height: 1.2em;
+    float:left;
+    clear:both;
+    margin:20px;
+}
+#menu11 ul li{
+    float:left;
+}
+#menu11 ul li a{
+    display:block;
+    text-decoration:none;
+    padding:0px 10px 0px 10px;
+    width:170px;
+    height:55px;
+    border-left:8px dotted #fff;
+}
+#menu11 ul li a span{
+    display:block;
+}
+#menu11 ul li a span.title{
+    color:#46243f;
+}
+#menu11 ul li a:hover{
+    border-left:8px dotted #8c45d5;
+}
+#menu11 ul li a:hover span.title{
+}
+#menu11 ul li a span.text{
+    color:#8c45d5;
+    font-size:12px;
+    letter-spacing:0px;
+    visibility:hidden;
+    border-left:16px dotted #8c45d5;
+    line-height:0px;
+    padding-top:4px;
+    margin:10px 0px 12px 0px;
+}
+#menu11 ul li a:hover span.text{
+    visibility:visible;
+}
+<p>
+{
+}
+<cite>
+{
+}
