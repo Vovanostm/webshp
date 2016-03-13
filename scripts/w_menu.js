@@ -15,7 +15,6 @@ function update_in_arefs(){
 function navigate(_href)
 {
   var up_hrf="";
-  if (_href == "/") _href = "index.html";
   for (var i=0; i < _href.length; i++)
   {
     if ((i == 0)&&(_href[i]!="/")) up_hrf+=_href[i];
