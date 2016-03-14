@@ -11,15 +11,10 @@
     <link rel="stylesheet" href="/styles/style.css">
   </head>
   <body>
-    <nav id="main_nav">
-    <ol>
-      <li><a class="m-n" href="/index.html">Главная</a></li>
-      <li><a class="m-n" href="/lessons.html">Занятия</a></li>
-      <li><a class="m-n" href="/works">Работы</a></li>
-      <li><a class="m-n" href="/about.html">О нас</a></li>
-      <li><a class="m-n" href="/contacts.html">Контакты</a></li>
-    </ol>
-    </nav>
+    <?php
+      $nav = $_SERVER['DOCUMENT_ROOT'].'/nvg/main';
+      echo file_get_contents("$nav");
+     ?>
     <main>
       <header>
         <h1>Работы наших учеников</h1>
