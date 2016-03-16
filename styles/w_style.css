@@ -127,6 +127,7 @@ aside
   body
   {
     font-size: 120%;
+    hyphens:auto;
   }
   nav {
     font-size: 100%;
