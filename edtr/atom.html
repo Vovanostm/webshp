@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Atom. Настрока</title>
+  <meta name="keywords" content="Школа программистов, Веб-дизайн, Москва, Мытищи, Московская область, обучение">
+  <meta name="description" content="Сайт для учеников и учителей по направлению веб-дизайн в школе программистов">
+  <meta name="viewport" content="width=device-width">
+  <meta name="robots" content="all">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <meta property="business:contact_data:country_name" content="Russia">
+  <meta name="tndStatus" content="notShop">
+  <link rel="stylesheet" href="/styles/w_style.css">
+  <link rel="canonical" href="https://webshp.ru">
+</head>
+
+<body>
+  <nav id=main_nav>
+    <li><a class="m-n" href="/">Главная</a></li>
+    <li><a class="m-n" href="/courses">Занятия</a></li>
+    <li><a class="m-n" href="/works">Работы</a></li>
+    <li><a class="m-n" href="/about">О нас</a></li>
+    <li><a class="m-n" href="/contacts.html">Контакты</a></li>
+  </nav>
+  <main>
+    <header>
+      <h1>Настройки Atom для Front-end разработки</h1>
+      <a href="https://atom.io/"><img src="https://atom.io/assets/logo-29311b97dc1dec1c4262d1e75a94c9db.png" alt="логотип_Atom"></a>
+      <aside class="bread_crumbs">
+      <a href="/">Главная</a> / <a href="/#edtr">Редакторы</a> / <a href="/edtr/atom.html">Atom</a>
+      </aside>
+    </header>
+    <article>
+      <header>
+        <h2>Превращаем редактор в IDE</h2>
+      </header>
+      <h3>Что такое Atom?</h3>
+      <p>
+        Атом - прекрасный кросплатформенный текстовый редактор, который можно
+        улучшить до полноценной <dfn title="Интегрированная среда разработки">IDE</dfn> с помощью установки дполнительных плагинов.
+        Хотя сам редактор имеет вполне хороший функционал и готов к работе <q>из коробки</q>, но всегда хочется
+        ещё больше расширить свои возможности, улучшить скорость и удобство разработки. Для Вас перечислены
+        наиболее интересные плагины а ткже инструкции по установке для подготовки к <em title="интерфейс и дизайн сайта">front-end</em> разаработке:
+      </p>
+      <h3>Работа с html и css</h3>
+      <ol>
+        <li><strong><a class ="no_href" href="#emmet">Emmet</a> - </strong> пишем много кода с помощью простых сокращений</li>
+        <li><strong><a class ="no_href" href="#w3c">W3c Validation</a> - </strong> проверьте ваш HTML и CSS код на наличие ошибок</li>
+        <li><strong><a class ="no_href" href="#autocomp">Autocomplete Paths</a> - </strong> удобная навигация по файлам при изменении атрибутов <em>src</em>, <em>href</em> и т.п.</li>
+        <li><strong><a class ="no_href" href="#colpic">Color Picker</a> - </strong> управляйте цветами, изменяйте, улучшайте</li>
+        <li><strong><a class ="no_href" href="#can_i">Can I Use</a> - </strong> узнайте, какие браузеры поддерживают введённые теги и свойства</li>
+        <li><strong><a class ="no_href" href="#mult_cur">Multi-cursor</a> - </strong> редактируйте сразу несколько строк/слов обновременно</li>
+        <li><strong><a class ="no_href" href="#html_prv">HTML Preview</a> - </strong> смотрите результат своей работы, не выходя из редактора (аналог
+          <a href="http://plnkr.co">Plunker</a>)</li>
+        <li><strong><a class ="no_href" href="#mult_cur">Linter</a> - </strong> подсвечивает ошибки в коде</li>
+        <li><strong><a class ="no_href" href="#mult_cur">File-icons</a> - </strong> красивые иконки для файлов в проекте</li>
+        <li><strong><a class ="no_href" href="#mult_cur">Autoprefixer</a> - </strong> подсвечивает ошибки в коде</li>
+        <li><strong><a class ="no_href" href="#mult_cur">Auto-close HTML</a> - </strong> подсвечивает ошибки в коде</li>
+      </ol>
+    <h3>Работа c javascript и прочее</h3>
+    <ol>
+      <li><strong><a class ="no_href" href="#emmet">JS Snippets</a> - </strong> позволяет писать много кода с помощью простых сокращений</li>
+      <li><strong><a class ="no_href" href="#w3c">JS Hint</a> - </strong> проверьте ваш HTML и CSS код на наличие ошибок</li>
+      <li><strong><a class ="no_href" href="#autocomp">Project palette finder</a> - </strong> позволяет быстро найти цвета, использованные в проекте</li>
+      <li><strong><a class ="no_href" href="#colpic">Minimap</a> - </strong> миникарта вашего проекта - почувствуйте себя
+      стратегом!</li>
+      <li><strong><a class ="no_href" href="#can_i">Autocomplete plus</a> - </strong> узнайте, какие браузеры поддерживают введённые теги и свойства</li>
+      <li><strong><a class ="no_href" href="#mult_cur">Regex Railroad Diagram</a> - </strong>  гениальный плагин для регулярных выражений. Показывает регулярные выражения в графическом формате =)</li>
+      <li><strong><a class ="no_href" href="#html_prv">Symbols Tree View</a> - </strong> панелька со списком функций и переменных, как в WebStorm.
+        Для удобства советую включить все галочки, и написать в
+        AutoHiddenTypes "variable class", Var, Vars, var. Это исключит переменные из
+        панели и сама панель будет появляться только при наведении на неё.</li>
+      <li><strong><a class ="no_href" href="#mult_cur">Synced Sidebar</a> - </strong> синхронизирует боковую панель выделяя в нем активный файл.</li>
+      <li><strong><a class ="no_href" href="#mult_cur">Term</a> - </strong> красивые иконки для файлов в проекте</li>
+      <li><strong><a class ="no_href" href="#mult_cur">Uglify</a> - </strong> подсвечивает ошибки в коде</li>
+      <li><strong><a class ="no_href" href="#mult_cur">TODO-show</a> - </strong> подсвечивает ошибки в коде</li>
+      <li><strong><a class ="no_href" href="#mult_cur">Highlight Selected</a> - </strong> подсвечивает ошибки в коде</li>
+      <li><strong><a class ="no_href" href="#mult_cur">Spell check</a> - </strong> подсвечивает ошибки в коде</li>
+      <li><strong><a class ="no_href" href="#mult_cur">Open recent</a> - </strong> подсвечивает ошибки в коде</li>
+      <li><strong><a class ="no_href" href="#mult_cur">SVG Preview</a> - </strong>SVG Preview</li>
+    </ol>
+  </article>
+    <article>
+      <header>
+        <h2>Установка пакетов:</h2>
+      </header>
+      <h3>Шаг 1</h3>
+      <p>Скачать, установить и открыть редактор</p>
+      <h3>Шаг 2</h3>
+      <p>Перейти файл -> настройки</p>
+      <h3>Шаг 3</h3>
+      <p>Перейти файл -> настройки</p>
+      <h3>Шаг 4</h3>
+      <p>Выберите вкладку "install"</p>
+        <img src="/imgs/edtr/atom/Settings.png" alt="Окно настроек">
+      <h3>Шаг 5</h3>
+      <p>Введите название пакета, нажмите <kbd>Enter</kbd>, затем кликните на слово <em>install</em></p>
+        <img src="/imgs/edtr/atom/em_install.png" alt="Установка">
+    </article>
+  </main>
+  <footer>
+    <a href="https://my.informatics.ru">my.informatics.ru</a>
+    <p>Делайте уроки! =)</p>
+  </footer>
+  <script async src="/scripts/ya_metrica.js" type="text/javascript"></script>
+  <script async src="/scripts/font.js" type="text/javascript"></script>
+  <script async src="/scripts/menu.js" type="text/javascript"></script>
+</body>
+
+</html>
