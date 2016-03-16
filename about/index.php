@@ -19,10 +19,27 @@
      ?>
     <main>
       <header>
-        <h1>Кто мы?</h1>
+        <h1>Раздел в разработке</h1>
       </header>
+      <article>
+        <header>
+          <h2>Наши ресурсы</h2>
+        </header>
+        <p>
+          <a href="http://informatics.ru/">informatics.ru</a> - Сайт Мытищинской школы
+          программистов
+        </p>
+        <p>
+          <a href="http://xn--l1ag0a.xn--p1ai/">мшп.рф</a> - Сайт школы
+          программистов
+        </p>
+        <p>
+          <a href="https://my.informatics.ru/">EduApp</a> - Учебное веб-приложение
+        </p>
+      </article>
       <p>
-        Мы - преподаватели и ученики школы програмистов, которые хотят учить и учиться веб-мастерству
+
+
       </p>
     </main>
     <footer>

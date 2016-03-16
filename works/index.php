@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>Работы учеников. Веб-дизайн</title>
@@ -19,6 +18,7 @@
       <header>
         <h1>Работы наших учеников</h1>
       </header>
+      <h2>Раздел в разработе + checkboxы не работают :)</h2>
       <h2>Курс</h2>
       <menu>
         <li><label><input type="checkbox" checked="checked" name="" id="">Веб-дизайн</label></li>
@@ -38,17 +38,16 @@
         <header>
         <h3>2015 год</h3>
         <h4>Веб-дизайн</h4>
-        <ul>
-          <li><a href="http://web.what7.ru/skyrim/index.html">Колосов Арсений</a></li>
-        </ul>
+          <p><a href="http://web.what7.ru/skyrim/index.html">Колосов Арсений</a></p>
         <h3>2013 год</h3>
         <h4>CSS</h4>
-        <ul>
-          <li><a href="css/2013/Chuiko_N_A/">Чуйко Анастасия</a></li>
-          <li><a href="css/2013/Chertykovceva_T">Чертыковцева Татьяна</a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
+        <p>
+          <a href="css/2013/Chuiko_N_A/">Чуйко Анастасия</a>
+        </p>
+          <p><a href="css/2013/Chertykovceva_T">Чертыковцева Татьяна</a></p>
+          <p><a href=""></a></p>
+          <p><a href=""></a></p>
+
         </article
       </section>
     </main>

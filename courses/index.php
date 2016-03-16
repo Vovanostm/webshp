@@ -21,7 +21,6 @@
       <header>
         <h1>Учебные направления</h1>
       </header>
-      <?php echo 'А это будет обработано.'; ?>
       <article id="courses">
         <header>
           <h2>Основные курсы</h2>
@@ -29,13 +28,13 @@
         <ul>
           <li>HTML</li>
           <li>CSS</li>
-          <li> <a name = "in_aref" href="/courses/html5_css3.html">HTML5/CSS3</a></li>
+          <li> <a href="/courses/html5_css3.html">HTML5/CSS3</a></li>
           <li>PHP</li>
           <li>CMS</li>
         </ul>
       </article>
     </main>
-    <footer>Ó
+    <footer>
      <a href="https://my.informatics.ru">my.informatics.ru</a>
      <p>Делайте уроки! =)</p>
     </footer>

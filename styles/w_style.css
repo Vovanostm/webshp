@@ -1,4 +1,11 @@
 /* Styles go here */
+body
+{
+  font-size: 110%;
+  color:rgb(59, 59, 59);
+  line-height: 150%;
+  text-align: justify;
+}
 header
 {
   margin-top: 60px;
@@ -7,6 +14,7 @@ header
 h1, h2, nav, footer, header
 {
   text-align: center;
+  line-height: 150%;
 }
 
 h3
@@ -17,10 +25,21 @@ h3
 
 main
 {
-  margin: 100px 7%;
+  margin: 100px 14%;
   padding: 0 3%;
 }
 
+li
+{
+  margin: 20px;
+  padding-left: 10px;
+}
+
+.no_href
+{
+  text-decoration: none;
+  color: inherit;
+}
 nav
 {
   position: fixed;
@@ -80,11 +99,28 @@ dt
 {
   margin: 30px auto 15px;
 }
+kbd
+{
+  font-size: 110%;
+  background-color: #eeeeee;
+  padding: 0 5px;
+}
+aside
+{
+  text-align: left;
+  font-style: 70%;
+}
 
 
 
-
-
+@media all and (max-width: 1280px)
+{
+  main
+  {
+    margin: 100px 7%;
+    padding: 0 3%;
+  }
+}
 
 @media all and (max-width: 800px)
 {

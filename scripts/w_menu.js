@@ -4,11 +4,15 @@ var
 var stateObj = { foo: "bar" };
 
 function update_in_arefs(){
-  var hrefs = document.getElementsByName("in_aref");
+  var hrefs = document.getElementsByTagName("a");
   for (var i = 0; i < hrefs.length; i++)
+  {
+    console.log(hrefs[i].href[0]);
+  if (hrefs[i].getAttribute("href")[0]=="/")
   {
    console.log(hrefs[i].innerHTML);
    hrefs[i].addEventListener("click", aref_click);
+ }
   }
 }
 
