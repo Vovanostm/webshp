@@ -150,5 +150,7 @@ aside
   h3 {
     font-size: 100%;
   }
-
+  img{
+    width: 100%;
+  }
 }
