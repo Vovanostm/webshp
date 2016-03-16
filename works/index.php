@@ -42,9 +42,9 @@
         <h3>2013 год</h3>
         <h4>CSS</h4>
         <p>
-          <a href="css/2013/Chuiko_N_A/">Чуйко Анастасия</a>
+          <a href="http://webshp.ru/works/css/2013/Chuiko_N_A/">Чуйко Анастасия</a>
         </p>
-          <p><a href="css/2013/Chertykovceva_T">Чертыковцева Татьяна</a></p>
+          <p><a href="http://webshp.ru/works/css/2013/Chertykovceva_T">Чертыковцева Татьяна</a></p>
           <p><a href=""></a></p>
           <p><a href=""></a></p>
 
