@@ -7,7 +7,14 @@ if (count($_POST) > 0)//--Если были приняты данные из HTM
 	if ($name == "get_page") {
 		$page = $_POST['page'];
 		// echo ("page..$page");
-		$content  = file_get_contents($page);
+		if ( file_exists($page) )
+		{
+			$content  = file_get_contents($page);
+		}
+		else
+		{
+			$content  = file_get_contents("./errors/404.htm");
+		}
 		$template = '|<main>(.+)</main>|isU';
 		$result   = preg_match($template, $content, $matches);
 		echo ($matches[1]);
