@@ -1,7 +1,7 @@
 /* Styles go here */
 body
 {
-  font-size: 110%;
+  font-size: 1.5vw;
   color:rgb(59, 59, 59);
   line-height: 150%;
   text-align: justify;
@@ -31,7 +31,7 @@ main
 
 li
 {
-  margin: 20px;
+  margin: 15px;
   padding-left: 10px;
 }
 
@@ -151,7 +151,7 @@ aside
   h3 {
     font-size: 100%;
   }
-  img{
+  img.abt{
     width: 100%;
   }
 }
