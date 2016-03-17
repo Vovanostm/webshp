@@ -25,7 +25,7 @@
   </nav>
   <main>
     <aside class="bread_crumbs">
-    <a href="/">Главная</a> / <a href="/#edtr">Редакторы</a> / <a href="/edtr/atom.html">Atom</a>
+      <a href="/">Главная</a> / <a href="/#edtr">Редакторы</a> / <a href="/edtr/atom.html">Atom</a>
     </aside>
     <header>
       <h1>Настройки Atom для Front-end разработки</h1>
@@ -37,50 +37,45 @@
       </header>
       <h3>Что такое Atom?</h3>
       <p>
-        Атом - прекрасный кросплатформенный текстовый редактор, который можно
-        улучшить до полноценной <dfn title="Интегрированная среда разработки">IDE</dfn> с помощью установки дполнительных плагинов.
-        Хотя сам редактор имеет вполне хороший функционал и готов к работе <q>из коробки</q>, но всегда хочется
-        ещё больше расширить свои возможности, улучшить скорость и удобство разработки. Для Вас перечислены
-        наиболее интересные плагины а ткже инструкции по установке для подготовки к <em title="интерфейс и дизайн сайта">front-end</em> разаработке:
+        Атом - прекрасный кросплатформенный текстовый редактор, который можно улучшить до полноценной <dfn title="Интегрированная среда разработки">IDE</dfn> с помощью установки дполнительных плагинов. Хотя сам редактор имеет вполне хороший функционал
+        и готов к работе <q>из коробки</q>, но всегда хочется ещё больше расширить свои возможности, улучшить скорость и удобство разработки. Для Вас перечислены наиболее интересные плагины а ткже инструкции по установке для подготовки к <em title="интерфейс и дизайн сайта">front-end</em>        разаработке:
       </p>
       <h3>Работа с html и css</h3>
       <ol>
         <li><strong><a class ="no_href" href="#emmet">Emmet</a> - </strong> пишем много кода с помощью простых сокращений</li>
+        <li><strong><a class ="no_href" href="#mult_cur">Multi-cursor</a> - </strong> редактируйте сразу несколько строк/слов обновременно</li>
+          <a href="http://plnkr.co">Plunker</a>)</li>
         <li><strong><a class ="no_href" href="#w3c">W3c Validation</a> - </strong> проверьте ваш HTML и CSS код на наличие ошибок</li>
         <li><strong><a class ="no_href" href="#autocomp">Autocomplete Paths</a> - </strong> удобная навигация по файлам при изменении атрибутов <em>src</em>, <em>href</em> и т.п.</li>
         <li><strong><a class ="no_href" href="#colpic">Color Picker</a> - </strong> управляйте цветами, изменяйте, улучшайте</li>
         <li><strong><a class ="no_href" href="#can_i">Can I Use</a> - </strong> узнайте, какие браузеры поддерживают введённые теги и свойства</li>
-        <li><strong><a class ="no_href" href="#mult_cur">Multi-cursor</a> - </strong> редактируйте сразу несколько строк/слов обновременно</li>
-        <li><strong><a class ="no_href" href="#html_prv">HTML Preview</a> - </strong> смотрите результат своей работы, не выходя из редактора (аналог
-          <a href="http://plnkr.co">Plunker</a>)</li>
+
         <li><strong><a class ="no_href" href="#mult_cur">Linter</a> - </strong> подсвечивает ошибки в коде</li>
         <li><strong><a class ="no_href" href="#mult_cur">File-icons</a> - </strong> красивые иконки для файлов в проекте</li>
         <li><strong><a class ="no_href" href="#mult_cur">Autoprefixer</a> - </strong>добавляет префиксы к CSS для работы во всех браузерах</li>
         <li><strong><a class ="no_href" href="#mult_cur">Auto-close HTML</a> - </strong>автоматически закрывает открытые html-теги</li>
       </ol>
-    <h3>Работа c javascript и прочее</h3>
-    <ol>
-      <li><strong><a class ="no_href" href="#emmet">JS Snippets</a> - </strong> позволяет писать много кода с помощью простых сокращений</li>
-      <li><strong><a class ="no_href" href="#w3c">JS Hint</a> - </strong> проверьте ваш HTML и CSS код на наличие ошибок</li>
-      <li><strong><a class ="no_href" href="#autocomp">Project palette finder</a> - </strong> позволяет быстро найти цвета, использованные в проекте</li>
-      <li><strong><a class ="no_href" href="#colpic">Minimap</a> - </strong> миникарта вашего проекта - почувствуйте себя
-      стратегом!</li>
-      <li><strong><a class ="no_href" href="#can_i">Autocomplete plus</a> - </strong> узнайте, какие браузеры поддерживают введённые теги и свойства</li>
-      <li><strong><a class ="no_href" href="#mult_cur">Regex Railroad Diagram</a> - </strong>  гениальный плагин для регулярных выражений. Показывает регулярные выражения в графическом формате =)</li>
-      <li><strong><a class ="no_href" href="#html_prv">Symbols Tree View</a> - </strong> панелька со списком функций и переменных, как в WebStorm.
-        Для удобства советую включить все галочки, и написать в
-        AutoHiddenTypes "variable class", Var, Vars, var. Это исключит переменные из
-        панели и сама панель будет появляться только при наведении на неё.</li>
-      <li><strong><a class ="no_href" href="#mult_cur">Synced Sidebar</a> - </strong> синхронизирует боковую панель выделяя в нем активный файл.</li>
-      <li><strong><a class ="no_href" href="#mult_cur">Term</a> - </strong> красивые иконки для файлов в проекте</li>
-      <li><strong><a class ="no_href" href="#mult_cur">Uglify</a> - </strong> минимзирует и сохраняет js файл</li>
-      <li><strong><a class ="no_href" href="#mult_cur">TODO-show</a> - </strong> окно с задачами</li>
-      <li><strong><a class ="no_href" href="#mult_cur">Highlight Selected</a> - </strong> подсвечивает ошибки в коде</li>
-      <li><strong><a class ="no_href" href="#mult_cur">Spell check</a> - </strong> проверка правописания (только английстий язык)</li>
-      <li><strong><a class ="no_href" href="#mult_cur">Open recent</a> - </strong>открыть недавно закрытые файлы/проекты</li>
-      <li><strong><a class ="no_href" href="#mult_cur">SVG Preview</a> - </strong>показывает картинку svg прямо в редакторе</li>
-    </ol>
-  </article>
+      <h3>Работа c javascript и прочее</h3>
+      <ol>
+        <li><strong><a class ="no_href" href="#emmet">JS Snippets</a> - </strong> позволяет писать много кода с помощью простых сокращений</li>
+        <li><strong><a class ="no_href" href="#w3c">JS Hint</a> - </strong> проверьте ваш HTML и CSS код на наличие ошибок</li>
+        <li><strong><a class ="no_href" href="#autocomp">Project palette finder</a> - </strong> позволяет быстро найти цвета, использованные в проекте</li>
+        <li><strong><a class ="no_href" href="#colpic">Minimap</a> - </strong> миникарта вашего проекта - почувствуйте себя стратегом!
+        </li>
+        <li><strong><a class ="no_href" href="#can_i">Autocomplete plus</a> - </strong> узнайте, какие браузеры поддерживают введённые теги и свойства</li>
+        <li><strong><a class ="no_href" href="#mult_cur">Regex Railroad Diagram</a> - </strong> гениальный плагин для регулярных выражений. Показывает регулярные выражения в графическом формате =)</li>
+        <li><strong><a class ="no_href" href="#html_prv">Symbols Tree View</a> - </strong> панелька со списком функций и переменных, как в WebStorm. Для удобства советую включить все галочки, и написать в AutoHiddenTypes "variable class", Var, Vars, var.
+          Это исключит переменные из панели и сама панель будет появляться только при наведении на неё.</li>
+        <li><strong><a class ="no_href" href="#mult_cur">Synced Sidebar</a> - </strong> синхронизирует боковую панель выделяя в нем активный файл.</li>
+        <li><strong><a class ="no_href" href="#mult_cur">Term</a> - </strong> красивые иконки для файлов в проекте</li>
+        <li><strong><a class ="no_href" href="#mult_cur">Uglify</a> - </strong> минимзирует и сохраняет js файл</li>
+        <li><strong><a class ="no_href" href="#mult_cur">TODO-show</a> - </strong> окно с задачами</li>
+        <li><strong><a class ="no_href" href="#mult_cur">Highlight Selected</a> - </strong> подсвечивает ошибки в коде</li>
+        <li><strong><a class ="no_href" href="#mult_cur">Spell check</a> - </strong> проверка правописания (только английстий язык)</li>
+        <li><strong><a class ="no_href" href="#mult_cur">Open recent</a> - </strong>открыть недавно закрытые файлы/проекты</li>
+        <li><strong><a class ="no_href" href="#mult_cur">SVG Preview</a> - </strong>показывает картинку svg прямо в редакторе</li>
+      </ol>
+    </article>
     <article>
       <header>
         <h2>Установка редактора и пакетов:</h2>
@@ -92,10 +87,27 @@
       <p>Перейти файл -> настройки</p>
       <h3>Шаг 3</h3>
       <p>Выберите вкладку "install"</p>
-        <img class="abt" src="/imgs/edtr/atom/Settings.png" alt="Окно настроек">
+      <img class="abt" src="/imgs/edtr/atom/Settings.png" alt="Окно настроек">
       <h3>Шаг 4</h3>
       <p>Введите название пакета, нажмите <kbd>Enter</kbd>, затем кликните на слово <em>install</em></p>
-        <img class="abt" src="/imgs/edtr/atom/em_install.png" alt="Установка">
+      <img class="abt" src="/imgs/edtr/atom/em_install.png" alt="Установка">
+    </article>
+    <article>
+      <header>
+        <h2>Подробнее о пакетах</h2>
+      </header>
+      <h3 id="emmet">Emmet</h3>
+      <p>Простые сокращения мгновенно расширяются в сложные фрагменты кода, Emmet превратит вас в более продуктивного разработчика.</p>
+      <a href="http://docs.emmet.io/abbreviations/syntax/">Синтаксис</a>
+      <p>Подготовка к работе с новым HTML документом занимает менее чем секунду. Просто введите ! или html:5, нажмите «Tab»</p>
+      <img class="abt" src=https://habrastorage.org/storage2/0a0/13d/24b/0a013d24becc519a7b9a2a55fe486f81.gif alt="emmet">
+      <p>Фигурные скобки используются для содержания. К примеру, h1{foo} преобразится в:
+      <p><code>&lt;h1>foo&lt;/h1></code></p>
+
+<p>Квадратные скобки используются для атрибутов. Итак, a[href=#] выдаст следующее:</p>
+<p><code>&lt;a href="#">&lt;/a></code></p>
+      <img class="abt" src=https://habrastorage.org/storage2/f56/295/296/f5629529660786fd7dba68909281a0c1.gif alt="emmet">
+      <p><a href="https://habrahabr.ru/post/175747/">Подробнее на хабре</a></p>
     </article>
   </main>
   <footer>
