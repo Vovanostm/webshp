@@ -16,12 +16,14 @@
 </head>
 
 <body>
-  <nav id=main_nav>
+  <nav id="main_nav">
+    <ol>
     <li><a class="m-n" href="/">Главная</a></li>
     <li><a class="m-n" href="/courses">Занятия</a></li>
     <li><a class="m-n" href="/works">Работы</a></li>
     <li><a class="m-n" href="/about">О нас</a></li>
     <li><a class="m-n" href="/contacts.html">Контакты</a></li>
+    </ol>
   </nav>
   <main>
     <aside class="bread_crumbs">
@@ -31,38 +33,51 @@
       <h1>Настройки Atom для Front-end разработки</h1>
       <a href="https://atom.io/"><img src="https://atom.io/assets/logo-29311b97dc1dec1c4262d1e75a94c9db.png" alt="логотип_Atom"></a>
     </header>
+    <h3>
+      Содержание:
+    </h3>
+    <ul>
+      <li><a href="#about">Что такое Атом</a></li>
+      <li>Полезные пакеты
+        <ol>
+          <li><a href="#web_p">Для верстальщика</a></li>
+          <li><a href="#wer_p">Для кодера</a></li>
+        </ol>
+      </li>
+      <li><a href="#install">Как установить атом и пакеты к нему</a></li>
+      <li><a href="#more">Подробнее о пакетах</a></li>
+    </ul>
     <article>
       <header>
         <h2>Превращаем редактор в IDE</h2>
       </header>
-      <h3>Что такое Atom?</h3>
+      <h3 id="about">Что такое Atom?</h3>
       <p>
         Атом - прекрасный кросплатформенный текстовый редактор, который можно улучшить до полноценной <dfn title="Интегрированная среда разработки">IDE</dfn> с помощью установки дполнительных плагинов. Хотя сам редактор имеет вполне хороший функционал
         и готов к работе <q>из коробки</q>, но всегда хочется ещё больше расширить свои возможности, улучшить скорость и удобство разработки. Для Вас перечислены наиболее интересные плагины а ткже инструкции по установке для подготовки к <em title="интерфейс и дизайн сайта">front-end</em>        разаработке:
       </p>
-      <h3>Работа с html и css</h3>
+      <h3 id="web_p">Работа с html и css</h3>
       <ol>
-        <li><strong><a class ="no_href" href="#emmet">Emmet</a> - </strong> пишем много кода с помощью простых сокращений</li>
-        <li><strong><a class ="no_href" href="#mult_cur">Multi-cursor</a> - </strong> редактируйте сразу несколько строк/слов обновременно</li>
-          <a href="http://plnkr.co">Plunker</a>)</li>
+        <li><strong><a class ="no_href" href="#emmet">Emmet</a> - </strong> пишем много кода с помощью простых сокращений. Нажатие на <kbd>Tab</kbd> разворачивает сокращение</li>
+        <li><strong><a class ="no_href" href="#colpic">Color Picker</a> - </strong> вызов удобной цветовой палитры простым сочетанием клавиш <kbd>Ctrl+Alt+C</kbd> или <kbd>Cmd+Shift+C</kbd></li>
+        <li><strong><a class ="no_href" href="#html_prv">HTML Preview</a> - </strong> смотрите результат своей работы, не выходя из редактора (аналог <a href="http://plnkr.co">Plunker</a>)</li>
+        <li><strong><a class ="no_href" href="#mult_cur">File-icons</a> - </strong> красивые иконки для файлов в проекте</li>
         <li><strong><a class ="no_href" href="#w3c">W3c Validation</a> - </strong> проверьте ваш HTML и CSS код на наличие ошибок</li>
         <li><strong><a class ="no_href" href="#autocomp">Autocomplete Paths</a> - </strong> удобная навигация по файлам при изменении атрибутов <em>src</em>, <em>href</em> и т.п.</li>
-        <li><strong><a class ="no_href" href="#colpic">Color Picker</a> - </strong> управляйте цветами, изменяйте, улучшайте</li>
         <li><strong><a class ="no_href" href="#can_i">Can I Use</a> - </strong> узнайте, какие браузеры поддерживают введённые теги и свойства</li>
-
+        <li><strong><a class ="no_href" href="#mult_cur">Multi-cursor</a> - </strong> редактируйте сразу несколько строк/слов обновременно</li>
         <li><strong><a class ="no_href" href="#mult_cur">Linter</a> - </strong> подсвечивает ошибки в коде</li>
-        <li><strong><a class ="no_href" href="#mult_cur">File-icons</a> - </strong> красивые иконки для файлов в проекте</li>
         <li><strong><a class ="no_href" href="#mult_cur">Autoprefixer</a> - </strong>добавляет префиксы к CSS для работы во всех браузерах</li>
         <li><strong><a class ="no_href" href="#mult_cur">Auto-close HTML</a> - </strong>автоматически закрывает открытые html-теги</li>
       </ol>
-      <h3>Работа c javascript и прочее</h3>
+      <h3 id="wer_p">Работа c javascript и прочее</h3>
       <ol>
         <li><strong><a class ="no_href" href="#emmet">JS Snippets</a> - </strong> позволяет писать много кода с помощью простых сокращений</li>
         <li><strong><a class ="no_href" href="#w3c">JS Hint</a> - </strong> проверьте ваш HTML и CSS код на наличие ошибок</li>
         <li><strong><a class ="no_href" href="#autocomp">Project palette finder</a> - </strong> позволяет быстро найти цвета, использованные в проекте</li>
         <li><strong><a class ="no_href" href="#colpic">Minimap</a> - </strong> миникарта вашего проекта - почувствуйте себя стратегом!
         </li>
-        <li><strong><a class ="no_href" href="#can_i">Autocomplete plus</a> - </strong> узнайте, какие браузеры поддерживают введённые теги и свойства</li>
+        <li><strong><a class ="no_href" href="#can_i">Autocomplete plus</a> - </strong> автозаполнение кода</li>
         <li><strong><a class ="no_href" href="#mult_cur">Regex Railroad Diagram</a> - </strong> гениальный плагин для регулярных выражений. Показывает регулярные выражения в графическом формате =)</li>
         <li><strong><a class ="no_href" href="#html_prv">Symbols Tree View</a> - </strong> панелька со списком функций и переменных, как в WebStorm. Для удобства советую включить все галочки, и написать в AutoHiddenTypes "variable class", Var, Vars, var.
           Это исключит переменные из панели и сама панель будет появляться только при наведении на неё.</li>
@@ -78,13 +93,13 @@
     </article>
     <article>
       <header>
-        <h2>Установка редактора и пакетов:</h2>
+        <h2 id="install">Установка редактора и пакетов:</h2>
       </header>
       <h3>Шаг 1</h3>
       <p>Скачать редактор с оффициального <a href="https://atom.io/">сайта</a></p>
       <p>Установить и открыть</p>
       <h3>Шаг 2</h3>
-      <p>Перейти файл -> настройки</p>
+      <p>Перейти файл -&gt; настройки</p>
       <h3>Шаг 3</h3>
       <p>Выберите вкладку "install"</p>
       <img class="abt" src="/imgs/edtr/atom/Settings.png" alt="Окно настроек">
@@ -94,19 +109,19 @@
     </article>
     <article>
       <header>
-        <h2>Подробнее о пакетах</h2>
+        <h2 id="more">Подробнее о пакетах</h2>
       </header>
       <h3 id="emmet">Emmet</h3>
       <p>Простые сокращения мгновенно расширяются в сложные фрагменты кода, Emmet превратит вас в более продуктивного разработчика.</p>
       <a href="http://docs.emmet.io/abbreviations/syntax/">Синтаксис</a>
       <p>Подготовка к работе с новым HTML документом занимает менее чем секунду. Просто введите ! или html:5, нажмите «Tab»</p>
-      <img class="abt" src=https://habrastorage.org/storage2/0a0/13d/24b/0a013d24becc519a7b9a2a55fe486f81.gif alt="emmet">
-      <p>Фигурные скобки используются для содержания. К примеру, h1{foo} преобразится в:
-      <p><code>&lt;h1>foo&lt;/h1></code></p>
+      <img class="abt" src="https://habrastorage.org/storage2/0a0/13d/24b/0a013d24becc519a7b9a2a55fe486f81.gif" alt="emmet">
+      <p>Фигурные скобки используются для содержания. К примеру, h1{foo} преобразится в:</p>
+      <p><code>&lt;h1&gt;foo&lt;/h1&gt;</code></p>
 
 <p>Квадратные скобки используются для атрибутов. Итак, a[href=#] выдаст следующее:</p>
-<p><code>&lt;a href="#">&lt;/a></code></p>
-      <img class="abt" src=https://habrastorage.org/storage2/f56/295/296/f5629529660786fd7dba68909281a0c1.gif alt="emmet">
+<p><code>&lt;a href="#"&gt;&lt;/a&gt;</code></p>
+      <img class="abt" src="https://habrastorage.org/storage2/f56/295/296/f5629529660786fd7dba68909281a0c1.gif" alt="emmet">
       <p><a href="https://habrahabr.ru/post/175747/">Подробнее на хабре</a></p>
     </article>
   </main>

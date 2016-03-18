@@ -1,7 +1,7 @@
-/* Styles go here */
 body
 {
-  font-size: 1.5vw;
+  font-size: 1.3em;
+  background-color: #fff;
   color:rgb(59, 59, 59);
   line-height: 150%;
   text-align: justify;
@@ -11,7 +11,7 @@ header
   margin-top: 60px;
 }
 
-h1, h2, nav, footer, header
+nav, footer, header, .no_list
 {
   text-align: center;
   line-height: 150%;
@@ -31,13 +31,14 @@ main
 
 li
 {
-  margin: 15px;
+  margin: 10px;
   padding-left: 10px;
 }
 
 .no_href
 {
   text-decoration: none;
+  background-color: inherit;
   color: inherit;
 }
 nav
@@ -48,6 +49,7 @@ nav
   left: 10%;
   padding: 10px 0;
   background-color: #FFF;
+  color: inherit;
   border-bottom: 1px solid #e0e0e0;
   -webkit-transition: all 0.5s;
    -moz-transition: all 0.5s;
@@ -78,12 +80,14 @@ nav li, menu li
 nav li a
 {
    text-decoration: none;
+   background-color: inherit;
    color:black;
 
 }
 nav li:hover
 {
   background-color:#ddeedd;
+  color: inherit;
   border-radius:10px;
 }
 a
@@ -108,7 +112,7 @@ kbd
 aside
 {
   text-align: left;
-  font-style: 70%;
+  font-size: 70%;
 }
 
 
@@ -148,10 +152,7 @@ aside
   h2 {
     font-size: 115%;
   }
-  h3 {
-    font-size: 100%;
-  }
-  img.abt{
+  .abt{
     width: 100%;
   }
 }
