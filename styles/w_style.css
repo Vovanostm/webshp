@@ -1,11 +1,13 @@
 body
 {
-  font-size: 1.3em;
+  /*font-size: 120%;
+  line-height: 1.5;*/
+  font: 120%/1.5 sans-serif;
   background-color: #fff;
   color:rgb(59, 59, 59);
-  line-height: 150%;
-  text-align: justify;
+
 }
+
 header
 {
   margin-top: 60px;
@@ -14,7 +16,6 @@ header
 nav, footer, header, .no_list
 {
   text-align: center;
-  line-height: 150%;
 }
 
 h3
@@ -94,6 +95,9 @@ a
 {
   color:#3450a0;
 }
+p{
+    text-align: justify;
+}
 footer
 {
   margin-top:50px;
@@ -108,6 +112,7 @@ kbd
   font-size: 110%;
   background-color: #eeeeee;
   padding: 0 5px;
+  border-radius: 6px;
 }
 aside
 {
