@@ -13,6 +13,7 @@ function update_in_arefs() {
     console.log(hrefs[i].href[0]);
     if (hrefs[i].getAttribute("href")[0] == "/") {
       console.log(hrefs[i].innerHTML);
+      if(!hrefs[i].classList.contains("no_aj"))
       hrefs[i].addEventListener("click", aref_click);
     }
   }
