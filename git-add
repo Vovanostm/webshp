@@ -1,0 +1,18 @@
+#!/bin/bash
+git add [!.]*.html
+git add styles/[!.]*
+git add courses/[!.]*
+git add lessons/[!.]*
+git add imgs/[!.]*
+git add fr_ppl[!.]*
+git add web*
+git add ind*
+git add work.php
+git add works[!.]*
+git add robots*
+git add favico*
+git add scripts[!.]*
+git add errors/[!.]*
+git add about/[!.]*
+git add nvg/[!.]*
+git add edtr/[!.]*
