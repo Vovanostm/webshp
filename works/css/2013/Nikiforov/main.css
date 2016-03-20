@@ -1,0 +1,123 @@
+HTML
+{
+  text-align:center;  
+  background:#f3f8f6; 
+}
+BODY
+{
+  position:relative; 
+  margin: 10px auto; 
+  text-align: left;  
+  padding:0;         
+  width:1000px;       
+  font:small Georgia, serif; 
+  color: #2A3D34;    
+}
+a
+{text-decoration:none;
+}
+
+H1 
+{ 
+
+  position:absolute;
+  width:810px;  
+  height:150px;
+  background: url(images/logo.jpg); 
+background-repeat: repeat-y;
+  border:1px solid #4169E1;
+  margin:0;padding:0;
+  padding-left:180px;
+  font-size:80px;
+  line-height:100px;
+
+  padding-top:60;
+}
+
+
+#content 
+{ 
+  position:statik;
+  left:240; top:260px;
+  padding:10px;
+  border: 1px solid #4169E1;
+  width:770px;  
+  background:whit;
+  bottom:20px;
+  padding-top:250px;
+  margin-left:200 ;
+}
+ #vipadmenu
+ {position:absolute ;
+ top:250;
+ }
+ul {
+    
+    width: 150px; 
+    list-style: none; 
+    margin: 10; 
+    padding: 0; 
+    font-family: Arial, sans-serif; 
+    font-size: 10pt;
+    border-bottom: 1px solid #4169E1; 
+
+   }
+   li ul {
+   
+    position: absolute; 
+    display: none; 
+    margin-left: 149px; 
+    margin-top: -2em; 
+    top:65;
+   }
+   li a {
+    display: block; 
+    padding: 5px; 
+    text-decoration: none; 
+    color: black; 
+    border: 1px solid #4169E1;
+    background-color: white; 
+    border-bottom: none; 
+   }
+   li a:hover {
+    color: #ffe; 
+    background-color: #5488af; 
+   }
+   li:hover ul { 
+    display: block; 
+   }
+   .brd {
+    border-bottom: 1px solid #ccc; 
+   }
+   #podval
+   {position:static;
+
+  width:800;
+  left:0;  
+  height:20px;
+  padding-left:180px;
+  font-size:15px;
+  text-align:right;
+  margin-left:10;
+  margin-right:10;
+  bottom:0;
+   }
+   a:link {
+    color: black; /* ÷вет ссылок */
+   }
+   a:visited {
+    color: black; /* ÷вет посещенных ссылок */
+   }
+   a:active {
+    color: black; /* ÷вет активной ссылки */ 
+   } 
+.none {display:none;}
+
+
+H2, H3, H4, H5, H6 {margin-bottom:0.2em;}
+P {margin:0.2em 0 1em;}
+
+H2 {font-size:1.4em;}
+H3 {font-size:1.2em;}
+
+

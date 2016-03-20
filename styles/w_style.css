@@ -2,9 +2,10 @@ body
 {
   /*font-size: 120%;
   line-height: 1.5;*/
-  font: 120%/1.5 sans-serif;
+  font: 115%/1.5 sans-serif;
   background-color: #fff;
   color:rgb(59, 59, 59);
+  text-align: justify;
 
 }
 
@@ -69,7 +70,7 @@ nav li, menu li
   list-style: none;
   display: inline-block;
   padding: 10px 0;
-  width: 120px;
+  /*width: 120px;*/
   margin: 0;
   -webkit-transition: all 0.8s;
    -moz-transition: all 0.8s;
@@ -80,10 +81,11 @@ nav li, menu li
 
 nav li a
 {
+  padding: 30px;
    text-decoration: none;
-   background-color: inherit;
+   background-color: rgb(255, 255, 255);
+   background-color: rgba(255, 255, 255, 0.0);
    color:black;
-
 }
 nav li:hover
 {
@@ -95,9 +97,6 @@ a
 {
   color:#3450a0;
 }
-p{
-    text-align: justify;
-}
 footer
 {
   margin-top:50px;
@@ -107,17 +106,32 @@ dt
 {
   margin: 30px auto 15px;
 }
-kbd
-{
-  font-size: 110%;
-  background-color: #eeeeee;
-  padding: 0 5px;
-  border-radius: 6px;
-}
 aside
 {
   text-align: left;
-  font-size: 70%;
+  font-size: 90%;
+}
+
+.bread_crumbs > a:hover
+{
+  transition: all 0.2s;
+}
+.bread_crumbs > a:hover
+{
+  padding: 5px;
+  background-color: #ddeedd;
+  border-radius: 5px;
+}
+
+kbd, code
+{
+  font-family: Courier, "Courier New", monospace;
+  background-color: #f1f1f1;
+  padding:3px 5px;
+  border-radius: 6px;
+}
+code{
+  background-color: #e0e4ee;
 }
 
 
@@ -143,8 +157,8 @@ aside
     width: 96%;
     left: 2%;
   }
-  nav li{
-    width: 90px;
+  nav li a {
+    padding: 10px;
   }
   main
   {
