@@ -1,4 +1,7 @@
-(function() {
+  WebFontConfig = {
+    google: { families: [ 'Exo+2:300:latin,cyrillic' ] }
+  };
+  (function() {
     var wf = document.createElement('script');
     wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
     wf.type = 'text/javascript';

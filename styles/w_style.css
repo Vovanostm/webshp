@@ -2,6 +2,7 @@ body
 {
   /*font-size: 120%;
   line-height: 1.5;*/
+  font: 115%/1.5 "Exo 2", sans-serif;
   font-weight: 300;
   background-color: #fff;
   color:rgb(99, 99, 99);
