@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'Exo 2';
-    src: local('Exo 2 Light'), local('Exo2-Light'), url('exo2light.woff2') format('woff2'), url('exo2light.woff') format('woff'), url('exo2light.ttf') format('truetype');
+    src: local('Exo 2 Light'), local('Exo2-Light'), url('exo2light.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: 'Exo 2';
-    src: local('Exo 2 Light Italic'), local('Exo2-LightItalic'), url('exo2lightitalic.woff2') format('woff2'), url('exo2lightitalic.woff') format('woff'), url('exo2lightitalic.ttf') format('truetype');
+    src: local('Exo 2 Light Italic'), local('Exo2-LightItalic'), url('exo2lightitalic.woff2') format('woff2');
     font-weight: 300;
     font-style: italic;
 }
