@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Lintel';
+    src: local('Lintel'), url('lintel.woff2') format('woff2'), url('lintel.woff') format('woff'), url('lintel.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lintel';
+    src: local('Lintel Italic'), local('Lintel-Italic'), url('lintelitalic.woff2') format('woff2'), url('lintelitalic.woff') format('woff'), url('lintelitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}

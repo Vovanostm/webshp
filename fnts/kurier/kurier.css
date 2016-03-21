@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Kurier';
+    src: local('Kurier Light'), local('KurierLight-Regular'), url('kurierlight.woff2') format('woff2'), url('kurierlight.woff') format('woff'), url('kurierlight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Kurier';
+    src: local('Kurier Light Italic'), local('KurierLight-Italic'), url('kurierlightitalic.woff2') format('woff2'), url('kurierlightitalic.woff') format('woff'), url('kurierlightitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Kurier';
+    src: local('Kurier'), local('Kurier-Regular'), url('kurier.woff2') format('woff2'), url('kurier.woff') format('woff'), url('kurier.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Kurier';
+    src: local('Kurier Italic'), local('Kurier-Italic'), url('kurieritalic.woff2') format('woff2'), url('kurieritalic.woff') format('woff'), url('kurieritalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Kurier';
+    src: local('Kurier Medium'), local('KurierMedium-Regular'), url('kuriermedium.woff2') format('woff2'), url('kuriermedium.woff') format('woff'), url('kuriermedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Kurier';
+    src: local('Kurier Medium Italic'), local('KurierMedium-Italic'), url('kuriermediumitalic.woff2') format('woff2'), url('kuriermediumitalic.woff') format('woff'), url('kuriermediumitalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Kurier';
+    src: local('Kurier Bold'), local('Kurier-Bold'), url('kurierbold.woff2') format('woff2'), url('kurierbold.woff') format('woff'), url('kurierbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Kurier';
+    src: local('Kurier Bold Italic'), local('Kurier-BoldItalic'), url('kurierbolditalic.woff2') format('woff2'), url('kurierbolditalic.woff') format('woff'), url('kurierbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Kurier';
+    src: local('Kurier Heavy'), local('KurierHeavy-Regular'), url('kurierheavy.woff2') format('woff2'), url('kurierheavy.woff') format('woff'), url('kurierheavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Kurier';
+    src: local('Kurier Heavy Italic'), local('KurierHeavy-Italic'), url('kurierheavyitalic.woff2') format('woff2'), url('kurierheavyitalic.woff') format('woff'), url('kurierheavyitalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}

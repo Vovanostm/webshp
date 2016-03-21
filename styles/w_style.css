@@ -2,9 +2,9 @@ body
 {
   /*font-size: 120%;
   line-height: 1.5;*/
-  font: 115%/1.5 sans-serif;
+  font-weight: 300;
   background-color: #fff;
-  color:rgb(59, 59, 59);
+  color:rgb(99, 99, 99);
   text-align: justify;
 
 }
@@ -18,7 +18,6 @@ nav, footer, header, .no_list
 {
   text-align: center;
 }
-
 h3
 {
   margin-top: 50px;
