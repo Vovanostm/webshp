@@ -3,3 +3,18 @@ RewriteCond %{HTTP_HOST} ^www\.webshp\.ru$
 RewriteRule ^/?$ "http\:\/\/webshp\.ru\/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^37\.140\.192\.157
 RewriteRule (.*) http://www.webshp.ru/$1 [R=301,L]
+
+<IfModule mod_expires.c>
+  <FilesMatch \.(gif|png|jpg|jpeg|ogg|mp4|mkv|flv|swf|wmv|asf|asx|wma|wax|wmx|wm)$>
+    ExpiresDefault "access plus 1 year"
+  </FilesMatch>
+  ExpiresActive on
+  ExpiresByType image/jpeg "access plus 7 day"
+  ExpiresByType image/gif "access plus 7 day"
+  ExpiresByType image/png "access plus 7 day"
+  <FilesMatch \.(css|js)$>
+    ExpiresDefault "access plus 1 year"
+  </FilesMatch>
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+</IfModule>
