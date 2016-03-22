@@ -1,12 +1,33 @@
-  WebFontConfig = {
-    google: { families: [ 'Exo+2:300:latin,cyrillic' ] }
-  };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })();
-    document.body.setAttribute('style',"font-family:'Exo 2'");
+(function(){
+    function addFont() {
+        var style = document.createElement('style');
+        style.rel = 'stylesheet';
+        document.head.appendChild(style);
+        style.textContent = localStorage.sourceExo2;
+    }
+    try {
+        if (localStorage.sourceSansPro) {
+            // The font is in localStorage, we can load it directly
+            addFont();
+        } else {
+            // We have to first load the font file asynchronously
+            var request = new XMLHttpRequest();
+            request.open('GET', '/fnts/exotwo/exotwo.css', true);
+
+            request.onload = function() {
+                if (request.status >= 200 && request.status < 400) {
+                    // We save the file in localStorage
+                    localStorage.sourceExo2 = request.responseText;
+
+                    // ... and load the font
+                    addFont();
+                }
+            }
+
+            request.send();
+        }
+    } catch(ex) {
+        // maybe load the font synchronously for woff-capable browsers
+        // to avoid blinking on every request when localStorage is not available
+    }
+}());

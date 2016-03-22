@@ -3,6 +3,3 @@ RewriteCond %{HTTP_HOST} ^www\.webshp\.ru$
 RewriteRule ^/?$ "http\:\/\/webshp\.ru\/" [R=301,L]
 RewriteCond %{HTTP_HOST} ^37\.140\.192\.157
 RewriteRule (.*) http://www.webshp.ru/$1 [R=301,L]
-<FilesMatch "\.(woff|woff2|ttf|png|gif)$">
-Header set Cache-Control "max-age=604800, public"
-</FilesMatch>
