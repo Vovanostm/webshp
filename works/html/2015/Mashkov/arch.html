@@ -1,0 +1,140 @@
+<HTML>
+<HEAD>
+	<meta charset="UTF-8">
+	<TITLE>Brain Paradise</TITLE>
+	<style>
+body{
+	text-decoration: none;
+	color: #fff;
+	min-width: 900px;
+	min-height: 600px;
+	background: url(img/bg4.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 1;
+}
+#but1:hover {
+	opacity: 1;
+	transition: .4s ease-in-out;
+}
+.top img:hover{
+  box-shadow:0 0 15px #00aaff;
+  border:1px solid #00aaff;
+  opacity: 1;
+}
+.menu {
+	padding-left: 20px;
+	padding-right: 30px;
+	width: 850px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 40px;
+	background-color: #000;
+	opacity: 0.8;
+	border-radius: 30px;
+	box-shadow: 0px 0px 14px 4px #000;
+}
+.top {
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	width: 950px;
+	height: 700px;
+	background-color: #000;
+	opacity: 0.8;
+	border-radius: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 0px 14px 4px #000;
+}
+#but1 {
+	width: 185px;
+	text-align: center;
+	height: 35px;
+	opacity: 0.6;
+	transition: .4s ease-in-out;
+}
+a { 
+    text-decoration: none;
+   }
+#gallery {
+  position: relative;
+  padding-top: 50%;
+  -moz-user-select: none; user-select: none;
+}
+
+#gallery img {
+  position: absolute;
+  top: 25%;
+  left: 12.5%;
+  max-width: 24.5%;
+  max-height: 49.5%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: zoom-in;
+   -moz-user-select: none; user-select: none;
+   opacity: 1;
+}
+#gallery img:nth-child(4n-2) {left: 37.5%;}
+#gallery img:nth-child(4n-1) {left: 62.5%;}
+#gallery img:nth-child(4n) {left: 87.5%;}
+#gallery img:nth-child(n+5) {top: 75%;}
+
+#gallery img:focus {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 31;
+  max-width: 100%;
+  max-height: 100%;
+  outline: none;
+  pointer-events: none;
+  opacity: 1;
+}
+
+#gallery img:focus ~ div {
+  position:  fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+   z-index: 30;
+    background: rgba(240,240,240);
+  cursor: zoom-out;
+  opacity: 1;
+}
+
+	</style>
+</HEAD>
+<BODY link="#fff" alink="#f00" vlink="#fff" text-decoration="none">
+<div class="menu">
+	<TABLE align="center">
+		<TR align="center">
+			<TD><A href="start.html"><div id="but1"><FONT size="5">Главная</FONT></div></TD>
+			<TD><A href="info.html"><div id="but1"> <FONT size="5">Информация</FONT></div></TD>
+			<TD><A href="arch.html"><div id="but1"> <FONT size="5">Контент</FONT></div></TD>
+			<TD><A href="about.html"><div id="but1"><FONT size="5">Разработчики</FONT></div></TD>
+		</TR>
+	</TABLE>
+</div>
+<CENTER><img src="img/sh1.png"></CENTER>
+<div class="top"><CENTER><H1>Наш архив</H1><HR width="260"></CENTER>
+<BIG><P>
+<TABLE width="100%" align="center">
+   <DIV id="gallery">
+  <IMG src="img/bg1.jpg" alt="" tabindex="0" /> 
+  <IMG src="img/bg2.jpg" alt="" tabindex="0" /> 
+  <IMG src="img/bg3.jpg" alt="" tabindex="0" /> 
+  <IMG src="img/plash.jpg" alt="" tabindex="0" /> 
+  <IMG src="img/mashkov.jpg" alt="" tabindex="0" />  </TR>  
+</DIV>
+</TABLE>
+
+</BIG></div>
+<!--Footer-->
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><HR size="2"><CENTER><P> a Mashkov Alexey production©<BR>Brain Paradise®</Center><FONT color="#000">Тел: 8(903)514-50-01
+</BODY>
+</HTML>

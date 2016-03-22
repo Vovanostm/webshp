@@ -1,0 +1,60 @@
+
+
+.exitb{
+    width: 55px;
+    -webkit-transition: all 0.08s ease-in-out;
+}
+
+.exitb:hover{
+    width: 57px;    
+}
+
+.exitb:active{
+    width: 53px;
+}
+
+table{
+    width: 100%;
+    height: 100px;
+}
+
+ a{
+    text-decoration: none;
+    color: black;
+}
+
+.e{
+    width:100px;
+    -webkit-transition: all 0.15s ease-in-out;
+}
+
+.e:hover{
+    -webkit-transform:translateX(-7px);
+}
+
+.e:active{
+    -webkit-transform:translateX(0px);
+}
+
+.e1{
+    width:100px;
+    -webkit-transition: all 0.15s ease-in-out;
+}
+
+.e1:hover{
+    -webkit-transform:translateX(7px);
+}
+
+.e1:active{
+    -webkit-transform:translateX(0px);
+}
+
+.n{
+    font-family: heliosthin;
+    font-size: 4em;
+}
+
+@font-face {
+  font-family: heliosthin;
+  src: url(HeliosThin.otf);
+}

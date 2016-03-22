@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+     <head>
+             <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+	         <title>Галерея </title>
+	         <LINK rel="stylesheet" type="text/css" href="css/Новый3.css">
+	         <link rel="stylesheet" href="css/style.css" />
+           <link rel="stylesheet" media="screen,projection" href="css/ui.totop.css" />   
+			 <script type="text/javascript" src="js/rt.js"></script>  
+			 <style type="text/css">
+			 body {background-image: url('NT35.jpg');background-repeat: repeat;background-attachment: fixed}
+			 </style>
+	<script language="javascript">
+		$(document).ready(function() {
+			$("#menu li a").wrapInner( '<span class="out"></span>' ).append( '<span class="bg"></span>' );
+    	$("#menu li a").each(function() {
+				$( '<span class="over">' +  $(this).text() + '</span>' ).appendTo( this );
+			});
+			$("#menu li a").hover(function() {
+
+				$(".out",	this).stop().animate({'top':	'45px'},	250); 
+				$(".over",	this).stop().animate({'top':	'0px'},		250); 
+				$(".bg",	this).stop().animate({'top':	'0px'},		120); 
+
+			}, function() {
+				
+				$(".out",	this).stop().animate({'top':	'0px'},		250); 
+				$(".over",	this).stop().animate({'top':	'-45px'},	250); 
+				$(".bg",	this).stop().animate({'top':	'-45px'},	120); 
+			});
+					
+
+
+			
+			$("#menu2 li a").wrapInner( '<span class="out"></span>' );
+			
+			$("#menu2 li a").each(function() {
+				$( '<span class="over">' +  $(this).text() + '</span>' ).appendTo( this );
+			});
+
+			$("#menu2 li a").hover(function() {
+				$(".out",	this).stop().animate({'top':	'45px'},	200); 
+				$(".over",	this).stop().animate({'top':	'0px'},		200); 
+
+			}, function() {
+				$(".out",	this).stop().animate({'top':	'0px'},		200); 
+				$(".over",	this).stop().animate({'top':	'-45px'},	200); 
+			});
+
+		});
+		
+
+	</script>
+  <body>
+	<div id="content">
+	
+		<h1>Как собрать компьютер</h1>
+		<div id="menu2" class="menu">
+			<ul>
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="incomp.html">Внутриности</a></li>
+				<li><a href="divais.html">Девайсы</a></li>
+				<li><a href="monster.html">Монстры</a></li>
+				<li><a href="">Галерея</a></li>
+				<li><a href="новый2.html">О себе</a></li>
+				
+		</ul>                  
+		</div> 	
+<div class="gallery">
+<a tabindex="1"><img src="df.jpg"></a>
+<a tabindex="2"><img src="5A4212FBC19C6DEB1DB56D68998A1384.jpg"></a>
+<a tabindex="3"><img src="gaming-pc-22.jpg"></a>
+<a tabindex="4"><img src="Hyper-Level-GT.jpg"></a>
+<a tabindex="5"><img src="pc_novelty_700_1.jpg"></a>
+<a tabindex="6"><img src="battlefield-3-pc-case-mod-4.jpg"></a>
+<a tabindex="7"><img src="img_02.jpg"></a>
+<a tabindex="8"><img src="4be9cb57-838b-4d0c-b1d9-5058355fe8de.jpg"></a>
+<a tabindex="9"><img src="mochniy_comp.jpg"></a>
+<a tabindex="10"><img src="11111111111111111111111.jpg"></a>
+<a tabindex="11"><img src="779513217.jpg"></a>
+<a tabindex="12"><img src="4880802-1.jpg"></a>
+</div>
+
+	<p align ="right";>
+<i><br>
+   &copy; <a href="mailto:kolya.kurenkov.1999@mail.ru ">Николай Куренков</a></i> 112 группа </p>
+				
+	<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src="js/easing.js" type="text/javascript"></script>
+	<script src="js/jquery.ui.totop.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {		
+		$().UItoTop({ easingType: 'easeOutQuart' });	
+		});
+	</script>
+  </body>
+</html>
