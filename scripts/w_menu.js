@@ -68,7 +68,7 @@ function aref_click(event) {
   window.history.pushState(stateObj, null, hrf);
 }
 window.addEventListener("popstate", function(e) {
-    navigate(window.location.hash);
+    navigate(window.location);
 }, false);
 
 update_in_arefs();
