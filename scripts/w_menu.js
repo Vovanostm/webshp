@@ -84,14 +84,14 @@ update_in_arefs();
 
 // }
 
-var hrefs = main_nav.getElementsByTagName("a");
-for (var i = 0; i < hrefs.length; i++) {
-  console.log(hrefs[i].innerHTML);
-  hrefs[i].addEventListener("click", aref_click);
+window.onload()
+{
+  var hrefs = main_nav.getElementsByTagName("a");
+  for (var i = 0; i < hrefs.length; i++) {
+    console.log(hrefs[i].innerHTML);
+    hrefs[i].addEventListener("click", aref_click);
+  }
 }
-
-
-
 
 var menu_bottom = main_nav.getBoundingClientRect().bottom + window.pageYOffset;
 
