@@ -83,15 +83,9 @@ update_in_arefs();
 // }
 
 // }
-
-document.addEventListener("DOMContentLoaded", append_menu);
 function append_menu()
 {
-  var hrefs = main_nav.getElementsByTagName("a");
-  for (var i = 0; i < hrefs.length; i++) {
-    console.log(hrefs[i].innerHTML);
-    hrefs[i].addEventListener("click", aref_click);
-  }
+  update_in_arefs();
 
   var menu_bottom = main_nav.getBoundingClientRect().bottom + window.pageYOffset;
 
@@ -113,6 +107,10 @@ function append_menu()
     // document.getElementById('showScroll').innerHTML = scrolled + 'px';
   }
 }
+
+window.onload=append_menu;
+// document.addEventListener("DOMContentLoaded", append_menu);
+
 
 
 
