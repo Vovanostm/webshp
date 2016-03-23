@@ -84,7 +84,8 @@ update_in_arefs();
 
 // }
 
-window.onload()
+document.addEventListener("DOMContentLoaded", append_menu);
+function append_menu()
 {
   var hrefs = main_nav.getElementsByTagName("a");
   for (var i = 0; i < hrefs.length; i++) {

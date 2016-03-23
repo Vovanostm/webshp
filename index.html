@@ -14,7 +14,7 @@
   <!-- <script async src="/scripts/w_loader.js" type="text/javascript"></script> -->
 
   <script type="text/javascript">
-  var _scripts=["/scripts/font.js","/scripts/menu.js"];for(var i=0;i<_scripts.length;i++){LoadScript(_scripts[i])}function LoadScript(a){function b(){var e=document.createElement("script");e.type="text/javascript";document.head.appendChild(e);e.textContent=localStorage.getItem(a)}try{if(localStorage.getItem(a)){b()}else{var c=new XMLHttpRequest();c.open("GET",a,true);c.onload=function(){if(c.status>=200&&c.status<400){localStorage.setItem(a,c.responseText);b()}};c.send()}}catch(d){}};
+  var _scripts=["/scripts/font.js","/scripts/menu.js"];for(var i=0;i<_scripts.length;i++){LoadScript(_scripts[i])}function LoadScript(a){function b(){var e=document.createElement("script");e.type="text/javascript";document.head.appendChild(e);e.textContent=localStorage.getItem(a)}try{var c=new XMLHttpRequest();c.open("GET",a,true);c.onload=function(){if(c.status>=200&&c.status<400){localStorage.setItem(a,c.responseText);b()}};c.send()}catch(d){}};
   // (function(){function b(){var d=document.createElement("style");d.rel="stylesheet";document.head.appendChild(d);d.textContent=localStorage.sourceExo2}try{if(localStorage.sourceExo2){b()}else{var c=new XMLHttpRequest();c.open("GET","/fnts/exotwo/exotwo.css",true);c.onload=function(){if(c.status>=200&&c.status<400){localStorage.sourceExo2=c.responseText;b()}};c.send()}}catch(a){}}());
   </script>
   <style>
