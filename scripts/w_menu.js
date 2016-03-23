@@ -92,27 +92,31 @@ function append_menu()
     console.log(hrefs[i].innerHTML);
     hrefs[i].addEventListener("click", aref_click);
   }
-}
 
-var menu_bottom = main_nav.getBoundingClientRect().bottom + window.pageYOffset;
+  var menu_bottom = main_nav.getBoundingClientRect().bottom + window.pageYOffset;
 
-window.onscroll = function() {
-  scrll = window.pageYOffset;
-  if (scrll < scrll_old) {
-    console.log('up');
-    main_nav.setAttribute('style', "top:0px");
+  window.onscroll = function() {
+    scrll = window.pageYOffset;
+    if (scrll < scrll_old) {
+      console.log('up');
+      main_nav.setAttribute('style', "top:0px");
 
-  } else {
-    // if (window.pageYOffset > menu_bottom)
-    main_nav.setAttribute('style', "top:-" + menu_bottom + "px");
+    } else {
+      // if (window.pageYOffset > menu_bottom)
+      main_nav.setAttribute('style', "top:-" + menu_bottom + "px");
 
-    console.log(menu_bottom);
-    console.log('down');
+      console.log(menu_bottom);
+      console.log('down');
+    }
+    scrll_old = scrll;
+    // window.pageYOffset ||
+    // document.getElementById('showScroll').innerHTML = scrolled + 'px';
   }
-  scrll_old = scrll;
-  // window.pageYOffset ||
-  // document.getElementById('showScroll').innerHTML = scrolled + 'px';
 }
+
+
+
+
 
 
 
