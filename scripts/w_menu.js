@@ -7,6 +7,7 @@ var stateObj = {
 };
 
 
+
 function update_in_arefs() {
   var hrefs = document.getElementsByTagName("a");
   for (var i = 0; i < hrefs.length; i++) {
@@ -48,6 +49,7 @@ function navigate(_href) {
         // document.getElementsByTagName("main")[0].innerHTML = '';
         document.getElementsByTagName("main")[0].innerHTML = xhr.responseText;
         update_in_arefs();
+        last_path=window.location.pathname;
         if (~_hash) {
           window.location.hash = _hash;
           _hash = _hash.substring(1);
@@ -64,11 +66,15 @@ function navigate(_href) {
 function aref_click(event) {
   event.preventDefault();
   hrf = this.getAttribute('href');
+  alert(hrf);
   navigate(hrf);
   window.history.pushState(stateObj, null, hrf);
 }
+
 window.addEventListener("popstate", function(e) {
-    navigate(window.location);
+    if (last_path!=window.location.pathname)
+      navigate(window.location.pathname+window.location.hash);
+    last_path=window.location.pathname;
 }, false);
 
 update_in_arefs();
