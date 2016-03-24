@@ -12,13 +12,11 @@
   <meta property="business:contact_data:country_name" content="Russia">
   <meta name="tndStatus" content="notShop">
   <script async src="/scripts/menu.js" type="text/javascript"></script>
-
   <script type="text/javascript">
-  var _scripts=["/scripts/font.js"];for(var i=0;i<_scripts.length;i++){LoadScript(_scripts[i])}function LoadScript(a){function b(){var e=document.createElement("script");e.type="text/javascript";document.head.appendChild(e);e.textContent=localStorage.getItem(a)}try{if(localStorage.getItem(a)){b()}else{var c=new XMLHttpRequest();c.open("GET",a,true);c.onload=function(){if(c.status>=200&&c.status<400){localStorage.setItem(a,c.responseText);b()}};c.send()}}catch(d){}};
-  // (function(){function b(){var d=document.createElement("style");d.rel="stylesheet";document.head.appendChild(d);d.textContent=localStorage.sourceExo2}try{if(localStorage.sourceExo2){b()}else{var c=new XMLHttpRequest();c.open("GET","/fnts/exotwo/exotwo.css",true);c.onload=function(){if(c.status>=200&&c.status<400){localStorage.sourceExo2=c.responseText;b()}};c.send()}}catch(a){}}());
+    var _scripts=["/scripts/font.js"];for(var i=0;i<_scripts.length;i++){LoadScript(_scripts[i])}function LoadScript(a){function b(){var e=document.createElement("script");e.type="text/javascript";document.head.appendChild(e);e.textContent=localStorage.getItem(a)}try{if(localStorage.getItem(a)){b()}else{var c=new XMLHttpRequest();c.open("GET",a,true);c.onload=function(){if(c.status>=200&&c.status<400){localStorage.setItem(a,c.responseText);b()}};c.send()}}catch(d){}};
   </script>
   <style>
-  body{font-weight:300;background-color:#fff;color:#636363;text-align:justify}header{margin-top:60px}nav,footer,header,.no_list{text-align:center}h3{margin-top:50px;margin-bottom:5px}main{margin:100px 14%;padding:0 3%}li{margin:10px;padding-left:10px}.no_href{text-decoration:none;background-color:inherit;color:inherit}nav{position:fixed;width:80%;top:0;left:10%;padding:10px 0;background-color:#FFF;color:inherit;border-bottom:1px solid #e0e0e0;-webkit-transition:all .5s;-moz-transition:all .5s;-ms-transition:all .5s;-o-transition:all .5s;transition:all .5s}nav>ol{padding:0;margin:0}nav li,menu li{list-style:none;display:inline-block;padding:10px 0;margin:0;-webkit-transition:all .8s;-moz-transition:all .8s;-ms-transition:all .8s;-o-transition:all .8s;transition:all .8s}nav li a{padding:30px;text-decoration:none;background-color:#fff;background-color:rgba(255,255,255,0.0);color:black}nav li:hover{background-color:#ded;color:inherit;border-radius:10px}a{color:#3450a0}footer{margin-top:50px}dt{margin:30px auto 15px}aside{text-align:left;font-size:90%}.bread_crumbs>a:hover{transition:all .2s}.bread_crumbs>a:hover{padding:5px;background-color:#ded;border-radius:5px}kbd,code{font-family:Courier,"Courier New",monospace;background-color:#f1f1f1;padding:3px 5px;border-radius:6px}code{background-color:#e0e4ee}@media all and (max-width:1280px){main{margin:100px 7%;padding:0 3%}}@media all and (max-width:800px){body{font-size:120%;hyphens:auto}nav{font-size:100%;width:96%;left:2%}nav li a{padding:10px}main{margin:150px 0;padding:0 10px}h1{font-size:130%}h2{font-size:115%}.abt{width:100%}}
+    body{background-color:#fff;color:#636363;text-align:justify}header{margin-top:60px}nav,footer,header,.no_list{text-align:center}h3{margin-top:50px;margin-bottom:5px}main{margin:100px 14%;padding:0 3%}li{margin:10px;padding-left:10px;text-align:left}.no_href{text-decoration:none;background-color:inherit;color:inherit}nav{position:fixed;width:80%;top:0;left:10%;padding:10px 0;background-color:#FFF;color:inherit;border-bottom:1px solid #e0e0e0}nav>ol{padding:0;margin:0}nav li,menu li{list-style:none;display:inline-block;padding:10px 0;margin:0;transition:all .8s}nav li a{padding:30px;text-decoration:none;background-color:#fff;background-color:rgba(255,255,255,0.0);color:black}nav li:hover{background-color:#ded;color:inherit;border-radius:10px}a{color:#3450a0}footer{margin-top:50px}dt{margin:30px auto 15px}aside{text-align:left;font-size:90%}.bread_crumbs>a:hover{transition:all .2s}.bread_crumbs>a:hover{padding:5px;background-color:#ded;border-radius:5px}kbd,code{font-family:Courier,"Courier New",monospace;padding:3px 5px;border-radius:6px}kdb{background-color:#f1f1f1}code{background-color:#e0e4ee}@media all and (max-width:1280px){main{margin:100px 7%;padding:0 3%}}@media all and (max-width:800px){body{font-size:120%;hyphens:auto}nav{font-size:100%;width:96%;left:2%}nav li a{padding:10px}main{margin:150px 0;padding:0 10px}h1{font-size:130%}h2{font-size:115%}.abt{width:100%}}
   </style>
 </head>
 <body>
@@ -40,8 +38,16 @@
     <article>
       <header>
         <h2>Полезные материалы</h2>
+        <ol>
+          <li><a href="#lrn">Справка и учебники</a></li>
+          <li><a href="#edtr">Редакторы</a></li>
+          <li><a href="#indx">Индексирование</a></li>
+          <li><a href="#imgs">Картинки</a></li>
+          <li><a href="#fnts">Шрифты</a></li>
+          <li><a href="#etc">Остальное</a></li>
+        </ol>
       </header>
-      <h3>Справочная информация</h3>
+      <h3 id="lrn">Справочная информация</h3>
       <p>
         <a href="https://webref.ru/ref">WebReference</a> - прекрасный справочник по <abbr title="Hypertext markup language - язык гипертекстовой разметки">HTML</abbr> и <abbr title="Cascading Style Sheets - каскадные таблицы стилей">CSS</abbr>. В нём можно найти описание различных тегов и правила их применения.
       </p>
@@ -62,7 +68,7 @@
       <p>
         <a href="http://www.sublimetext.com/3">Sublime Text</a> - великолепный текстовый редактор, позволяющий ускорить разработку проекта в несколько раз. Единственный минус - он условно <em>платный.</em> Легко улучшается до полноценной <dfn title="Интегрированная среда разработки">IDE</dfn>        путём установки дополнений. Чтобы быстро и просто устанавливать дополнения, скачайте <a href="https://packagecontrol.io/installation">Package control</a>
       </p>
-      <h3>Индексирование</h3>
+      <h3 id="indx">Индексирование</h3>
       <p>
         Для того, чтобы ваш сайт отображался при поисковых запросах, его нужно добавить в индексирование поисковыми машинами.
       </p>
@@ -70,26 +76,26 @@
       <p>Для Яндекса вы можете найти этот инструментарий в <a href="https://webmaster.yandex.ru/">Яндекс Вебмастер</a></p>
       <p>Для Google вы можете найти этот инструментарий в <a href="https://www.google.com/webmasters/">Google для веб-матеров</a>, также на просторах google Вы можете посмотреть, какие новости сейчас в <a href="https://www.google.com/trends/">тренеде</a> и популярные <a href="https://www.google.com/trends/hottrends/visualize?pn=p14">интернет-запросы</a></p>
 
-      <h3>Картинки</h3>
+      <h3 id="imgs">Картинки</h3>
       <p><a href="https://habrahabr.ru/post/279519/">Статья</a> на хабре об украшении <q>битых</q> ккартинок</p>
       <p><a href="https://tinypng.com/">Tinypng</a> - Сжимаем картинки для подготовки к WEB</p>
       <p><a href="https://habrahabr.ru/post/278745/">FLIF</a> - Новый формат изображений для WEB</p>
       <p><a href="https://design.google.com/icons/">Material icons</a> - иконки в стиле Material Design от Google</p>
 
-      <h3>Остальное</h3>
+      <h3 id="fnts">Шрифты</h3>
+      <p><a href="https://www.google.com/fonts/#ChoosePlace:select/Collection:Open+Sans/Script:cyrillic">Google fonts</a> - шрифты от Google - красивые и приятные. Позволят украсить свой сайт восхитительной типографиой, которая может сильно изменить характер сайта. Правильно подобранный шрифт может изменить мнение о вашем сайте в лучшую сторону.</p>
+      <p><a href="http://webfont.ru/">Web fonts</a> - если хочется ещё больше шрифтов и возможности их настройки. Не забудте добавить понравившейся шрифт в локальное <a href="http://css-live.ru/articles-css/bystraya-zagruzka-veb-shriftov-na-adaptivnyx-sajtax.html">хранилище</a>, чтобы ускорить загрузку страницы</p>
 
+      <h3 id="etc">Остальное</h3>
       <p><a href="https://github.com/">GitHub</a> - крупнейший веб-сервис для хостинга IT-проектов и их совместной разработки. Основан на системе контроля версий Git</p>
       <p>
         <a href="https://glvrd.ru/">Главный редактор</a> - позволит устранить грамматические ошибки и корректно сформулировать мысль.
       </p>
       <p><a href="http://www.xn----7sbbiparddsgqdgdxrq.xn--p1ai/">Автоисправление ошибок</a> - позволит устранить грамматические ошибки.</p>
       <p><a href="http://fishtext.ru/index.php">Рыба</a> - наполнит бессмысленным и интересным контентом ваш сайт. Конечно, "рыбу" лучше придумывать самому, но порой сложно.</p>
-      <p><a href="https://www.google.com/fonts/#ChoosePlace:select/Collection:Open+Sans/Script:cyrillic">Google fonts</a> - шрифты от Google - красивые и приятные. Позволят украсить свой сайт восхитительной типографиой, которая может сильно изменить характер сайта. Правильно подобранный шрифт может изменить мнение о вашем сайте в лучшую сторону.</p>
-      <p><a href="http://webfont.ru/">Web fonts</a> - если хочется ещё больше шрифтов и возможности их настройки. Не забудте добавить понравившейся шрифт в локальное <a href="http://css-live.ru/articles-css/bystraya-zagruzka-veb-shriftov-na-adaptivnyx-sajtax.html">хранилище</a>, чтобы ускорить загрузку страницы</p>
       <p>
         <a href="https://developers.google.com/speed/pagespeed/insights/">Google pagespeed</a> позволит узнать, насколько ваш веб-ресурс оптимизирован по скорости загрузки и по адаптивности содержимого.
       </p>
-
       <p>
         HTML <a href="https://validator.w3.org/nu/">Validator</a> позволит проверить ваш html-код на наличие ошибок.У CSS тоже есть свой <a href="http://jigsaw.w3.org/css-validator">валидатор</a>, поэтому вы сможете создавать ещё более качественные сайты
       </p>
