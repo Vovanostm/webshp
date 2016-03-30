@@ -1,9 +1,29 @@
 <?php
-// echo "hello!";
-if (count($_POST) > 0)//--Если были приняты данные из HTML-формы
+header("Content-Type: text/html; charset=utf-8");
+
+if (count($_GET) > 0){
+	$g_name = $_GET['name'];
+	if ($g_name == "to_work"){
+		$fp = fopen('to_work.txt', 'a+');
+		$mytext = $_GET['text']."\n";
+		$test = fwrite($fp, $mytext);
+		if ($test) echo 'Принято';
+		else echo 'Ошибка';
+		fclose($fp);
+	}
+
+}
+
+
+if (count($_POST) > 0)
 {
+
+
+
+
 	$name = $_POST['name'];
 	// echo ("page..$name");
+
 	if ($name == "get_page") {
 		$page = $_POST['page'];
 		// echo ("page..$page");
