@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", finishedDCL);
 f_s.addEventListener("click", sent_ans);
 
 function finishedDCL() {
-  alert('fin');
+  // alert('fin');
   f_s.addEventListener("click", sent_ans);
 
 }
@@ -19,6 +19,8 @@ function sent_ans(e) {
   xhr.open('GET', '/work.php?name=to_work&text=' + f_t.value, true);
   // xhr.setRequestHeader('Content-Type', '');
   xhr.send();
+  f_t.value = '';
+  alert('Спасибо, Ваше сообщение будет обработано в ближайшее время.')
   xhr.onreadystatechange = function() {
     // if (xhr.status != 200) alert(xhr.responseText);
   }
