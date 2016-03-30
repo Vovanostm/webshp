@@ -25,6 +25,19 @@
 
   <style>
     canvas{height: 0; width: 100%; transition: all 0.5s;}
+    .form {width: 50%; margin:auto;}
+    .form input[type="text"], .form input[type="submit"], .form input[type="reset"]{transition: all 0.5s;}
+
+    .form input[type="text"]{width: 100%; font:1em/1.5 sans-serif; border-radius: 10px;}
+    .form input[type="submit"]{display: block;margin: auto; width: 30%; font:1em/1.5 sans-serif; border:5px outset rgb(208, 208, 208); border-radius: 10px; background-color: rgb(255, 255, 255)}
+    .form input[type="text"]:hover{background-color: #ded;}
+    .form input[type="submit"]:hover{background-color: #ded;}
+    .form input[type="text"]:focus{background-color: rgb(255, 255, 255);}
+    .form input[type="submit"]:focus{background-color: #ded;}
+    .form input[type="submit"]:active{color:white;background-color:rgb(34, 236, 120); background-color: green; border:5px inset rgb(208, 208, 208); }
+
+
+
   </style>
   <script>
   document.addEventListener("DOMContentLoaded", function(event) {
@@ -122,17 +135,18 @@
       <p><a href="https://habrahabr.ru/post/278655/">Ожирение</a> сайтов</p>
       <p><a href="https://developer.mozilla.org/ru/docs/Web/API/Canvas_API">Canvas</a> Mozilla developer network</p>
       <p>The HTML5 <a href="http://bucephalus.org/text/CanvasHandbook/CanvasHandbook.html">Canvas</a> Handbook - описание всего и вся с canvas</p>
-      <p><a href="http://www.quackit.com/html/codes/html_borders.cfm">Borers</a> - различные виды рамок</p>
+      <p><a href="http://www.quackit.com/html/codes/html_borders.cfm">Borders</a> - различные виды рамок</p>
     </article>
-    <section>
+    <section class="form">
+      <p>
+        Если Вы хотите что-то сообщить, можете воспользоваться формой ниже:
+      </p>
         <p>
           <input id="f_t" type="text" />
         </p>
         <p>
           <input id="f_s" type="submit" />
-          <input type="reset" />
         </p>
-
     </section>
   </main>
   <footer>
