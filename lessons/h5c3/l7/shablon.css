@@ -1,0 +1,13 @@
+/* Styles go here */
+body{
+  font: 100 1.5em/1.5 sans-serif;
+}
+header{
+  text-align: center;
+}
+aside header{
+    margin-top: 40px;
+}
+img{
+  width: 100%;
+}

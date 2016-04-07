@@ -10,7 +10,6 @@ var pl1 = {
   h: 25,
   color: '#ff0000',
 };
-
 var pl2 = {
   x: 270,
   y: 75,
