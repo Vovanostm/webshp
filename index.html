@@ -25,16 +25,46 @@
 
   <style>
     canvas{height: 0; width: 100%; transition: all 0.5s;}
-    .form {width: 50%; margin:auto;}
-    .form input[type="text"], .form input[type="submit"], .form input[type="reset"]{transition: all 0.5s;}
+    .form {width: 80%; margin:auto;}
+    input{outline: none;}
+    .form input[type="text"], .form input[type="submit"], .form input[type="reset"]{transition: all 0.2s;}
+    .form input[type="text"]{background-color:rgb(246, 246, 246); width: 100%; font:1em/1.5 sans-serif; border:1px solid rgb(200, 200, 200); border-radius:5px;}
+    .form input[type="submit"]{display: block;margin: auto; width: 200px; font:1em/1.5 sans-serif; border:1px outset rgb(208, 208, 208); border-radius: 10px; background-color:rgb(246, 246, 246);}
+    .form input[type="submit"]:hover{background-color: #fff; outline: none;}
+    .form input[type="submit"]:focus{background-color: #fff; outline: none;}
+    .form input[type="submit"]:active{border:1px inset rgb(208, 208, 208); }
 
-    .form input[type="text"]{width: 100%; font:1em/1.5 sans-serif; border-radius: 10px;}
-    .form input[type="submit"]{display: block;margin: auto; width: 30%; font:1em/1.5 sans-serif; border:5px outset rgb(208, 208, 208); border-radius: 10px; background-color: rgb(255, 255, 255)}
-    .form input[type="text"]:hover{background-color: #ded;}
-    .form input[type="submit"]:hover{background-color: #ded;}
-    .form input[type="text"]:focus{background-color: rgb(255, 255, 255);}
-    .form input[type="submit"]:focus{background-color: #ded;}
-    .form input[type="submit"]:active{color:white;background-color:rgb(34, 236, 120); background-color: green; border:5px inset rgb(208, 208, 208); }
+
+    .i_txt{
+      position: relative;
+      margin-top: 3em;
+    }
+    .i_txt  label{
+      transition: ease-out all 0.2s;
+    }
+
+    .i_txt label{
+      position: absolute;
+      left: 3px;
+      top: 2px;
+    }
+    input:valid + label{
+      position: absolute;
+      top:-1.5em;
+      left: 3px;
+    }
+
+    .i_txt:hover label, input[type="text"]:focus + label{
+      position: absolute;
+      top:-1.5em;
+      left: 3px;
+    }
+    input[type="text"]:focus{
+      background-color: #fff;
+    }
+    /*.i_txt input:focus + label{
+      top:-20px;
+    }*/
 
 
 
@@ -42,7 +72,14 @@
   <script>
   document.addEventListener("DOMContentLoaded", function(event) {
     console.log("DOM fully loaded and parsed");
+    document.getElementById('f_t').addEventListener("click",function(event) {
+      this.classList.add('tht');
+      console.log("blur");} );
+      document.getElementById('f_t').addEventListener("blur",function(event) {
+        this.classList.add('tht');
+        console.log("blur");} );
   });
+
   </script>
   <!-- <link  rel="stylesheet" href="/styles/w_style.css" > -->
 </head>
@@ -139,11 +176,10 @@
     </article>
     <section class="form">
       <p>
-        Если Вы хотите что-то сообщить, можете воспользоваться формой ниже:
       </p>
-        <p>
-          <input id="f_t" type="text" />
-        </p>
+        <p></p>
+          <div class="i_txt"><input  id="f_t" type="text" required  /><label>Ваши комментарии и пожелания:</label></div>
+
         <p>
           <input id="f_s" type="submit" />
         </p>

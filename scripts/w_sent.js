@@ -14,13 +14,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 function sent_ans(e) {
   e.preventDefault();
+  // alert('Спасибо, Ваше сообщение будет обработано в ближайшее время.')
+
   // alert('sended');
   var xhr = new XMLHttpRequest();
+
   xhr.open('GET', '/work.php?name=to_work&text=' + f_t.value, true);
   // xhr.setRequestHeader('Content-Type', '');
   xhr.send();
   f_t.value = '';
-  alert('Спасибо, Ваше сообщение будет обработано в ближайшее время.')
+  alert(
+    'Спасибо, Ваше сообщение отправлено и будет обработано в ближайшее время.'
+  )
   xhr.onreadystatechange = function() {
     // if (xhr.status != 200) alert(xhr.responseText);
   }
