@@ -24,51 +24,6 @@
   </style>
 
   <style>
-    canvas{height: 0; width: 100%; transition: all 0.5s;}
-    .form {width: 80%; margin:auto;}
-    input{outline: none;}
-    .form input[type="text"], .form input[type="submit"], .form input[type="reset"]{transition: all 0.2s;}
-    .form input[type="text"]{background-color:rgb(246, 246, 246); width: 100%; font:1em/1.5 sans-serif; border:1px solid rgb(200, 200, 200); border-radius:5px;}
-    .form input[type="submit"]{display: block;margin: auto; width: 200px; font:1em/1.5 sans-serif; border:1px outset rgb(208, 208, 208); border-radius: 10px; background-color:rgb(246, 246, 246);}
-    .form input[type="submit"]:hover{background-color: #fff; outline: none;}
-    .form input[type="submit"]:focus{background-color: #fff; outline: none;}
-    .form input[type="submit"]:active{border:1px inset rgb(208, 208, 208); }
-
-
-    .i_txt{
-      position: relative;
-      margin-top: 3em;
-    }
-    .i_txt  label{
-      transition: ease-out all 0.2s;
-    }
-
-    .i_txt label{
-      position: absolute;
-      left: 3px;
-      top: 3px;
-      font-size: 0.8em;
-    }
-    input:valid + label{
-      position: absolute;
-      top:-1.5em;
-      left: 3px;
-    }
-
-    .i_txt:hover label, input[type="text"]:focus + label{
-      position: absolute;
-      top:-1.5em;
-      left: 3px;
-    }
-    input[type="text"]:focus{
-      background-color: #fff;
-    }
-    /*.i_txt input:focus + label{
-      top:-20px;
-    }*/
-
-
-
   </style>
   <script>
   document.addEventListener("DOMContentLoaded", function(event) {
@@ -82,7 +37,7 @@
   });
 
   </script>
-  <!-- <link  rel="stylesheet" href="/styles/w_style.css" > -->
+  <link  rel="stylesheet" href="/styles/form.css" >
 </head>
 <body>
   <nav id="main_nav">
@@ -174,6 +129,8 @@
       <p><a href="https://developer.mozilla.org/ru/docs/Web/API/Canvas_API">Canvas</a> Mozilla developer network</p>
       <p>The HTML5 <a href="http://bucephalus.org/text/CanvasHandbook/CanvasHandbook.html">Canvas</a> Handbook - описание всего и вся с canvas</p>
       <p><a href="http://www.quackit.com/html/codes/html_borders.cfm">Borders</a> - различные виды рамок</p>
+      <p><a href="http://caniuse.com/">Can i use</a> - поддержка CSS стилей и HTML тегов браузерами</p>
+      <p><a href="http://tools.promosite.ru/old/weight.php">tools.promosite.ru</a> - Анализатор апдейтов Яндекса</p>
     </article>
     <section class="form">
       <p>
