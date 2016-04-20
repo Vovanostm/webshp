@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Transform</title>
+<style>
+  body{
+  background-color: #fafafa;
+  font: 200 1.2em/1.5 sans-serif;
+}
+.dc{
+  margin: 50px 10%;
+  padding:20px;
+}
+
+h1,h2{
+  font-weight: 400;
+  text-align: center;
+}
+/*стили блоков для заданий*/
+.zd1, .zd3{
+  color:#FAFAFA;
+  background-color: #01B9FF;
+  text-align: center;
+}
+.zd2{
+  color:black;
+  background-color: #FAFAFA;
+  border: 2px solid #01B9FF;
+}
+
+/*Решение задач*/
+.cls{
+  transition:transform .6s ease;
+}
+.cls>div{
+  width:30px;
+  height:3px;
+  background: #fff;
+  margin: 2px auto;
+  transition:width .6s ease;
+}
+.cls::after,.cls::before {
+  content:"";
+  display: block;
+  width:30px;
+  height:3px;
+  background-color: #fff;
+  margin: 6px auto;
+  transition:transform .6s ease;
+}
+
+.cls:hover>div{
+  width:0;
+}
+.cls:hover::after {
+  transform-origin: center;
+  transform:translateY(-300%) rotate(45deg) ;
+}
+.cls:hover::before{
+  transform-origin: center;
+  transform:translateY(300%) rotate(-45deg) ;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="dc zd1">
+    <div class="cls"><div>
+
+    </div></div>
+    <p>Трансформация крестика</p>
+  </div>
+</body>
+</html>

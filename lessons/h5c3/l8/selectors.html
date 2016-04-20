@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Селекторы</title>
+  <style>
+    p::before{
+      content:"";
+      height: 30px;
+      width: 80px;
+      background:red;
+      display:block;
+      /*transition:.5s;*/
+    }
+    p::after{
+      content:"Hahaha";
+      height: 30px;
+      width: 80px;
+      background:blue;
+      display:block;
+      /*transition:.5s;*/
+    }
+    p:hover::before{
+      width: 140px;
+    }
+    p::first-letter{
+      color:green;
+      /*font:2em/1.5 sans-serif;*/
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>Много разных букв</p>
+  </div>
+</body>
+</html>

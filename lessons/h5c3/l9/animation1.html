@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Animate_Ball</title>
+  <style>
+
+@keyframes rtt {
+from {text-shadow: 0 0 3px black;}
+50% {text-shadow: 0 0 50px black;}
+to  {text-shadow: 0 0 3px black;}
+}
+.anim:hover{
+  color:red;
+  -webkit-animation: rtt 3s infinite ease;
+  -o-animation: rtt   3s infinite ease;
+  animation: rtt 3s infinite ease;
+}
+  </style>
+</head>
+<body>
+  <div id="ball">
+
+
+  </div>
+<p class="anim">
+  Всего лишь концентрация на конкретном абзаце
+</p>
+  <input  type = "text"/>
+</body>
+</html>

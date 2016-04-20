@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Transform</title>
+<style>
+  body{
+  background-color: #fafafa;
+  font: 200 1.2em/1.5 sans-serif;
+}
+.dc{
+  margin: 50px 10%;
+  padding:20px;
+}
+
+h1,h2{
+  font-weight: 400;
+  text-align: center;
+}
+/*стили блоков для заданий*/
+.zd1, .zd3{
+  color:#FAFAFA;
+  background-color: #01B9FF;
+  text-align: center;
+}
+.zd2{
+  color:black;
+  background-color: #FAFAFA;
+  border: 2px solid #01B9FF;
+}
+
+.img{
+  position: absolute;
+  left:30%;
+  width:300px;
+  height: 300px;
+  background: #01E472;
+  margin: auto;
+  transition: all 1s ease 0.2s;
+  z-index: 10;
+}
+.box:hover .img{
+  transform: perspective(800px) translate3d(200px,0,-100px) rotate3d(0,-1,0,45deg);
+}
+.img p{
+  padding:5px;
+}
+.box{
+  position: relative;
+  height: 200px;
+}
+.autor{
+  position: absolute;
+  left:30%;
+  width:200px;
+  z-index: 9;
+  transition: all 1s ease 0.2s;
+  transform:translateX(100px);
+}
+.box:hover .autor{
+  z-index: 9;
+  transform:translateX(0px);
+}
+
+.back{
+  position: fixed;
+  width:0;
+  height: 0;
+  transition: background 1s ease 0.4s;
+}
+
+.box:hover .back{
+  left: 0;
+  top: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);;
+}
+.back:hover{
+  left: 0;
+  top: 0;
+  width:0;
+  height: 0;
+  background: rgba(0, 0, 0, 0);;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="dc zd1">
+    <div class="cls"><div>
+
+    </div></div>
+    <p>Трансформация картинки</p>
+    <div class = "box">
+    <div class="img">
+      <p>
+        Вау! Вот это эффект!
+      </p>
+      <p>
+        Блок перемещается в пространстве!
+      </p>
+      <p>
+        Теперь я точно знаю, чем займусь этим вечером!
+      </p>
+    </div>
+    <div class="autor">
+      <p>
+        Эту картинку сделал кто-то
+        очень хороший, весёлый, отзывчивый и просто молодчинка
+      </p>
+    </div>
+    <div class="back">
+
+    </div>
+    </div>
+  </div>
+</body>
+</html>

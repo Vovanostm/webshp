@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Animate_Ball</title>
+  <style>
+  #ball {
+width: 60px;
+height: 60px;
+border-radius: 30px;
+background: #f00;
+position: absolute;
+bottom: 0;
+}
+@-webkit-keyframes bounce {
+0%	{ bottom: 0; }
+50%	{ bottom: 100px; }
+100%	{ bottom: 0; }
+}
+#ball:active {
+	-webkit-animation: bounce 1s 2 ease;
+	}
+
+  @-webkit-keyframes pulse {
+	0% {
+	-webkit-box-shadow: 0 0 20px rgba(200, 50, 50, 0.2);
+	}
+	50% {
+	-webkit-box-shadow: 0 0 20px rgba(200, 200, 50, 0.9);
+	}
+	100% {
+	-webkit-box-shadow: 0 0 20px rgba(200, 50, 50, 0.2);
+	}
+}
+
+input[type="text"]:focus {
+	-webkit-animation: pulse 1.5s infinite ease-in-out;
+}
+
+  </style>
+</head>
+<body>
+  <div id="ball">
+
+
+  </div>
+
+  <input  type = "text"/>
+</body>
+</html>
