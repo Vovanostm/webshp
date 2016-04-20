@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Animate_Ball</title>
+<style>
+body{
+  padding: 30px;
+  height:1024px;
+}
+
+@keyframes train{
+  from {transform:translate(0);}
+  25% {transform:translate(-200%,0);}
+  50% {transform:translate(-200%,200%);}
+  75% {transform:translate(0,200%);}
+  to {transform:translate(0,0);}
+}
+.anim{
+  position: absolute;
+  right: 25%;;
+  width:20%;
+}
+.hovered{
+  position: relative;
+  background-color: #f4f404;
+}
+.hovered:hover .anim{
+    animation: train 10s 1 ease;
+}
+  </style>
+</head>
+<body>
+  <div class ="hovered">
+
+
+  <img class="anim" src="img/train.png" alt="train">
+
+</div>
+</body>
+</html>

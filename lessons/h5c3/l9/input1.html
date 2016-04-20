@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Animate_Ball</title>
+<style>
+
+
+@keyframes fc{
+  from {box-shadow: 0 0 3px black;}
+  50% {box-shadow: 0 0 36px black;}
+  to {box-shadow: 0 0 3px black;}
+}
+.anim:focus{
+  animation: fc 2s infinite ease;
+
+}
+
+  </style>
+</head>
+<body>
+  <div class ="hovered">
+
+
+<p>
+  Как ваши дела?
+  <input class ="anim" type="text" />
+</p>
+<p>
+  Какой у вас пароль?
+  <input class = "anim" type="text" />
+</p>
+
+</div>
+</body>
+</html>

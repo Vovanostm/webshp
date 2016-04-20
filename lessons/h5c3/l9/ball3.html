@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Animate_Ball</title>
+<style>
+
+
+@keyframes ball{
+  from {left:25%}
+  50% {left:75%}
+  to {left:25%;}
+}
+@keyframes jump{
+  from {transform:translateY(0px);}
+  50% {transform:translateY(-50px);}
+  to {transform:translateY(0px);}
+}
+
+.anim{
+  position: absolute;
+  left:25%;;
+  width:10%;
+  bottom:0;
+}
+.hovered{
+  height: 100px;
+  position: relative;
+  border:1px solid black;
+}
+.hovered:hover .anim{
+    animation: ball 4s infinite linear, jump 1s infinite ease;
+}
+  </style>
+</head>
+<body>
+  <div class ="hovered">
+
+
+  <img class="anim" src="img/ball.png" alt="ball">
+
+</div>
+</body>
+</html>

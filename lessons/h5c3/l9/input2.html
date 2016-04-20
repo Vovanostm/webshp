@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Animate_Ball</title>
+<style>
+
+
+@keyframes fc{
+  from {background-color: #f00;}
+  to {background-color: #fff;}
+}
+
+em::after{
+  content: "";
+  display:inline-block;
+  width:20px;
+  height: 20px;
+  border-radius: 50%;
+  /*background-color: rgb(250, 174, 174);*/
+}
+.anim:focus~em::after{
+  animation: fc 1s infinite ease alternate;
+}
+
+  </style>
+</head>
+<body>
+  <div class ="hovered">
+
+
+<p>
+  Как ваши дела?
+  <input class ="anim" type="text" /><em>   </em>
+</p>
+<p>
+  Какой у вас пароль?
+  <input class = "anim" type="text" /><em>  </em>
+</p>
+
+</div>
+</body>
+</html>
