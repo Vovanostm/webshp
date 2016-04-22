@@ -14,6 +14,36 @@ if (count($_GET) > 0){
  if ($g_name == "smile"){
 	 echo "smiling";
  }
+ if ($g_name == "cat"){
+	 echo "dog";
+ }
+ if ($g_name == "help"){
+	 echo "try help_me_please";
+ }
+ if ($g_name == "help_me_please"){
+	 echo "okay - smile, help, pleaze, bill, sqr, 2+2";
+ }
+ if ($g_name == "pleaze"){
+	echo "Нет и даже не проси";
+ }
+ if ($g_name == "pleaze_pleaze"){
+	echo "Ну ладно - best";
+ }
+ if ($g_name == "best"){
+	echo "Ты лучший, нашёл оценку 5!";
+ }
+ if ($g_name == "bill"){
+ 	echo "cipher";
+ }
+ if ($g_name == "2+2"){
+ 	echo "11";
+ }
+ if ($g_name == "11"){
+	 echo "Да, 2+2 равно 11 в двоичной сс";
+ }
+ if ($g_name == "sqr"){
+	echo "Это квадратный корень";
+ }
 
 }
 
