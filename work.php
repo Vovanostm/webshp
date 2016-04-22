@@ -11,6 +11,9 @@ if (count($_GET) > 0){
 		else echo 'Ошибка';
 		fclose($fp);
 	}
+ if ($g_name == "smile"){
+	 echo "smiling";
+ }
 
 }
 
