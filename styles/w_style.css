@@ -9,7 +9,9 @@ header
 {
   margin-top: 60px;
 }
-
+h1,h2,h3,h4{
+  font-weight: 400;
+}
 nav, footer, header, .no_list
 {
   text-align: center;
