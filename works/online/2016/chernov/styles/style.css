@@ -1,0 +1,10 @@
+html,body{
+  margin: 0;
+  height: 100%;
+}
+body{
+  font: 300 1.3em/1.3 "Arial",sans-serif;
+}
+header img{
+  width: 100%;
+}

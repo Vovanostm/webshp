@@ -1,0 +1,71 @@
+a{
+  color:#0B0B61;
+}
+a:hover{
+  color:#0B0B61;
+}
+.menu{
+  background-color:white;
+}
+#ist{
+  color:#0431B4;
+}
+
+#li1:hover{
+  background-color:#eeeeee;
+}
+
+.photo1{
+  background-image:url(http://img-fotki.yandex.ru/get/9103/194076060.7/0_d7454_c305146c_XL.jpg);
+  background-position:50% 80%;
+}
+h1{
+  background-color:white;
+  color:#0B0B61;
+}
+p{
+  color:#A4A4A4;
+}
+h2{
+  color:#E6E6E6;
+}
+.photo2{
+  background-image:url(http://www.geo.ru/sites/default/files/bibliotheque_de_la_sorbonne_paris_i_2007_ccandida_hofer_koln_vg_bild-kunst_bonn_2014.jpg);
+  background-position:50% 80%;
+}
+.a2{
+  background-color:white;
+}
+.p1{
+  background-image:url(http://ofigenno.cc/content/1369-0/5.jpg);
+}
+.p2{
+  background-image:url(http://picworld.ru/wp-content/uploads/2015/10/beautiful_libraries_12.jpg);
+}
+.p3{
+  background-image:url(http://outletov.net/upload/medialibrary/892/%D1%81%D0%BE%D1%80%D0%B1%D0%BE%D0%BD%D0%BD%D0%B0%20%D0%BA%D1%80%D0%B0%D1%81%D0%B8%D0%B2%D0%B0%D1%8F.jpg);
+
+}
+.p4{
+  background-image:url(http://ofigenno.cc/content/1369-0/10.jpg);
+}
+.p5{
+  background-image:url(http://o-france.ru/wp-content/uploads/2013/05/Sorbonne.jpg);
+}
+.p6{
+  background-image:url(http://www.dezinfo.net/images2/image/02.2010/hrazna/1002.jpg);
+}
+.foot{
+  background-color:white;
+  color:black;
+}
+strong{
+  color:#8A0029;
+}
+
+#sec1, #sec2 ,#sec3{
+  background-color:#0B0B61;
+}
+ul, ol, #f{
+  color:#A4A4A4;
+}

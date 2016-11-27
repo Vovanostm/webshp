@@ -1,0 +1,147 @@
+html, main, header{
+  height: 100%;
+  width: 100%;
+}
+body{
+   font-family: 'Product Sans';
+   font-size: 1.6em;
+   height: 100%;
+   width: 100%;
+   margin: 0px;
+   background: 50% url("../img/backgraund_index.jpg");
+   background-size: cover;
+ }
+.pro{
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+.iner{
+  position: absolute;
+  top: 25%;
+  margin: 0 0 0 0;
+  width: 100%;
+}
+.names{
+  color: black;
+  font-size: 3.5em;
+}
+img{
+  width: 65px;
+}
+.lesson{
+  padding: 2px;
+  text-align: center;
+  display: inline-block;
+  margin: 7px;
+  }
+      .lesson > a{
+ text-decoration: none;
+ color: black;
+ margin: 1px;
+  }
+  .lang{
+    position: absolute;
+    bottom: 35px;
+    width: 100%;
+    text-align: center;
+  }
+  a > .lang{
+    color: black;
+    text-decoration: none;
+  }
+
+.down_home{
+  color: black;
+  font-size: 1em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom:0;
+  padding: 0px;
+  margin: 0px;
+}
+  @media (min-width:750px){
+    body{
+       font-family: 'Product Sans';
+       font-size: 1.5em;
+       height: 100%;
+       width: 100%;
+       margin: 0px;
+       background: 50% url("../img/backgraund_index.jpg");
+       background-size: cover;
+     }
+     img{
+       width: 95px;
+     }
+     .names{
+       color: black;
+       font-size: 5em;
+     }
+     .iner{
+       position: absolute;
+       top: 26%;
+       margin: 0 0 0 0;
+       width: 100%;
+     }
+  }
+@media (min-width:1050px){
+  .down_home{
+    color: black;
+    font-size: 1.4em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom:0;
+    padding: 0px;
+    margin: 0px;
+  }
+  .lang{
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  a > .lang{
+    color: black;
+    text-decoration: none;
+  }
+  body{
+     font-family: 'Product Sans';
+     font-size: 1.2em;
+     height: 100%;
+     width: 100%;
+     margin: 0px;
+     background: 50% url("../img/backgraund_index.jpg");
+     background-size: cover;
+   }
+  .pro{
+    height: 30px;
+    position: absolute;
+    text-align: right;
+    top: 0px;
+    right: 0px;
+    margin: 0;
+  }
+  .names{
+    color: black;
+    font-size: 6em;
+  }
+  .lesson >a::after {
+     content:"";
+     display:block;
+     margin: auto;
+     height:3px;
+     width:60%;
+     background-color: black;
+     transition:all .7s;
+    }
+  a:hover::after {
+    width:100%;
+  }
+  img{
+    width: 165px;
+  }
+
+}

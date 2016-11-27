@@ -16,3 +16,6 @@ git add errors/[!.]*
 git add about/[!.]*
 git add nvg/[!.]*
 git add edtr/[!.]*
+git add edtr/[!.]*
+git add fnts/[!.]*
+git add .ht*

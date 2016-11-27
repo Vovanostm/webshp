@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Sukhoi.Contacts</title>
+  <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta name="description" content="ОКБ Сухой - крупнешнее конструкторское бюро в России. Производ военную и гражданскую авиатехнику">
+  <meta name="keywords" content="сухой, окб сухой, sukhoi, su, superjet100, су, суперджет, проекты никиты мелёхина, самолеты, производитель самолетов">
+  <link href='style/page5.css' rel='stylesheet' type='text/css'>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-78567835-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+      <div class='divinheader' id = '#top'>
+        <div class='pro'>
+          <center>
+            <div class="lesson"><a href="index.html">Главная</a></div>
+            <div class="lesson"><a href="page1.html">Компания</a></div>
+            <div class="lesson"><a href="page2.html">Модели</a></div>
+            <div class="lesson"><a href="page3.html">Музей</a></div>
+            <div class="lesson"><a href="page4.html">Медиа</a></div>
+            <div class="lesson"><a href="page5.html">Контакты</a></div>
+          </center>
+        </div>
+        <div class = 'names'>
+          Sukhoi
+          <img src='img/logosu1.png'>
+        </div>
+        <div class = 'name'>
+          Контакты
+        </div>
+      </div>
+      <nav>
+      <a href='#top'><div class="totop">^</div></a>
+    </header>
+    <main>
+      <center>
+        <section><div class="news">
+          <div class="naming">Контакты</div>
+          <article><div class="text">
+            <p>
+              телефоны:
+              <ul>
+                <li> 8 (499) 550-01-06
+                <li> 8 (499) 550-01-07
+                <li> 8 (495) 940-26-63
+              </ul>
+              факс:
+              <ul>
+                <li> 8 (495) 945-68-06
+              </ul>
+              e-mail:
+              <ul>
+                <li> avpk@sukhoi.org
+                <li> info@sukhoi.org
+              </ul>
+            </p>
+          </div>
+        </article>
+        </div>
+      </section>
+        <section><div class="news">
+          <div class="naming">Местоположение</div>
+          <article><div class="text">
+            <p>
+              125284, Россия, Москва,
+              ул. Поликарпова, д. 23Б, а/я 604
+            </p>
+            <div id="map"></div>
+            <script type="text/javascript">
+              var map;
+              function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                  center: {lat: 55.779837, lng: 37.546336},
+                  scrollwheel: false,
+                  zoom: 17
+                });
+                var marker = new google.maps.Marker({
+                  position: {lat: 55.779837, lng: 37.546336},
+                  map: map,
+                  title: 'ОКБ СУХОЙ'
+                });
+              }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+                async defer>
+            </script>
+          </div>
+        </article>
+        </div>
+      </section>
+      </center>
+    </main>
+    <footer>
+      <br>
+      <div class="down_home">
+        <center>
+        <div class="lang">
+          <a href="page5en.html"><img src="img/eng.png"></a>
+        </div>
+        <div class="bug"><a href='bugreport.html'>Сообщить об ошибке</a></div>
+
+        Nikita Melyohin
+        </center>
+      </div>
+    </footer>
+  </body>
+</html>

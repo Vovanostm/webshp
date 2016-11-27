@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="description" content="Публикация итоговых проектов учеников по курсу HTML5/CSS3"/>
+  <script async src="scripts/script.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles/style.css"/>
+  <link rel="stylesheet" href="styles/section.css"/>
+  <link rel="stylesheet" href="styles/section1.css"/>
+  <link rel="stylesheet" href="styles/section2.css"/>
+  <link rel="stylesheet" href="styles/section3.css"/>
+  <link rel="stylesheet" href="styles/section4.css"/>
+  <link rel="stylesheet" href="styles/section5.css"/>
+  <link rel="stylesheet" href="styles/section6.css"/>
+  <meta name="viewport" content="width=device-width"/>
+  <title>Cвойства HTML5/CSS3</title>
+</head>
+
+<body>
+  <a href="#" title="К началу" class="topbutton">Наверх</a>
+  <header class="start">
+    <div id="main">
+      <h1>Cвойства HTML5/CSS3</h1>
+      <p>
+        Изучение HTML5/CSS3 в МШП
+      </p>
+    </div>
+    <nav>
+      <ol>
+        <li><a href="#stylization">Стилизация</a></li>
+        <li><a href="#transformation">Трансформации</a></li>
+        <li><a href="#svg">SVG</a></li>
+        <li><a href="#3d">Куб-галерея</a></li>
+        <li><a href="#сanvas">Canvas</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <main>
+    <section id="stylization" class="sect">
+      <article>
+        <h2>Стилизация элементов</h2>
+        <p>
+          <span class="line">CSS</span> увеличить доступность документа, предоставить
+          большую гибкость и возможность управления его представлением,
+          а также уменьшить сложность и повторяемость в структурном содержимом.
+        </p>
+      </article>
+      <div id="google">
+        <span id="a">G</span>
+        <span id="b">o</span>
+        <span id="c">o</span>
+        <span id="d">g</span>
+        <span id="e">l</span>
+        <span id="f">e</span>
+      </div>
+    </section>
+
+    <section id="transformation" class="sect">
+      <article>
+        <h2>Трансформации элементов</h2>
+        <p>
+          Трансформации в HTML5 предоставляют огромные возможности для оформления вашего сайта.
+          С их помощью ваш сайт становится интересным и интерактивным.
+        </p>
+      </article>
+      <div class="container">
+        <div class="wrap">
+          <div class="element element1">
+            <kbd>H</kbd>
+          </div>
+        </div>
+      <div class="wrap">
+          <div class="element element2">
+            <kbd>T</kbd>
+        </div>
+      </div>
+        <h3><kbd>Транформации HTML5</kbd></h3>
+      <div class="wrap">
+        <div class="element element3">
+          <kbd>M</kbd>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="element element4">
+          <kbd>L</kbd>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section id="svg" class="sect">
+      <article>
+        <h2>Векторная графика</h2>
+        <p>
+          Формат <span class="line">SVG</span> позволяет задать любую фигуру компактной строкой, описывающей путь от начальной точки до конечной через любые промежуточные координаты. <br/>
+          SVG обладает широким спектром визуальных свойств, которые можно применить к фигурам: окраска, прозрачность, скругление углов и т.д.
+        </p>
+      </article>
+      <svg xmlns="http://www.w3.org/2000/svg" width="600px" height="400px" viewbox="0 0 600 400">
+      <title>Велосипедист</title>
+      <desc>Человек на велосипеде</desc>
+      <circle cx="130" cy="300" r="58" fill="#fff" stroke="#000" stroke-width="4"/>
+      <circle cx="410" cy="298" r="58" fill="#fff" stroke="#000" stroke-width="4"/>
+      <circle cx="130" cy="305" r="15" fill="#fff" stroke="#000" stroke-width="3"/>
+      <circle cx="410" cy="305" r="15" fill="#fff" stroke="#000" stroke-width="3"/>
+      <circle cx="295" cy="310" r="10" fill="#fff" stroke="#000" stroke-width="3"/>
+      <line x1="115" y1="308" x2="70" y2="303" stroke="#000" stroke-width="2"/>
+      <line x1="115" y1="303" x2="70" y2="308" stroke="#000" stroke-width="2"/>
+      <line x1="133" y1="290" x2="127" y2="240" stroke="#000" stroke-width="2"/>
+      <line x1="127" y1="290" x2="133" y2="240" stroke="#000" stroke-width="2"/>
+      <line x1="145" y1="308" x2="190" y2="303" stroke="#000" stroke-width="2"/>
+      <line x1="145" y1="303" x2="190" y2="308" stroke="#000" stroke-width="2"/>
+      <line x1="133" y1="320" x2="127" y2="358" stroke="#000" stroke-width="2"/>
+      <line x1="127" y1="320" x2="133" y2="358" stroke="#000" stroke-width="2"/>
+      <line x1="395" y1="308" x2="350" y2="303" stroke="#000" stroke-width="2"/>
+      <line x1="395" y1="303" x2="350" y2="308" stroke="#000" stroke-width="2"/>
+      <line x1="413" y1="290" x2="407" y2="240" stroke="#000" stroke-width="2"/>
+      <line x1="407" y1="290" x2="413" y2="240" stroke="#000" stroke-width="2"/>
+      <line x1="425" y1="308" x2="470" y2="303" stroke="#000" stroke-width="2"/>
+      <line x1="425" y1="303" x2="470" y2="308" stroke="#000" stroke-width="2"/>
+      <line x1="413" y1="320" x2="407" y2="358" stroke="#000" stroke-width="2"/>
+      <line x1="407" y1="320" x2="413" y2="358" stroke="#000" stroke-width="2"/>
+      <polygon points="130,310 295,310 215,240" fill="rgba(255, 255, 255, 0.4)" stroke="#01B9FF" stroke-width="3"/>
+      <polygon points="295,310 215,240 390,240" fill="rgba(255, 255, 255, 0.5)" stroke="#01B9FF" stroke-width="3"/>
+      <line x1="215" y1="240" x2="215" y2="205" stroke="#01B9FF" stroke-width="3"/>
+      <line x1="205" y1="205" x2="225" y2="205" stroke="#01B9FF" stroke-width="3"/>
+      <line x1="215" y1="205" x2="215" y2="140" stroke="#000" stroke-width="2"/>
+      <circle cx="215" cy="105" r="35" fill="#fff" stroke="#000" stroke-width="2"/>
+      <line x1="205" y1="90" x2="205" y2="105" stroke="#000" stroke-width="2"/>
+      <line x1="220" y1="90" x2="220" y2="105" stroke="#000" stroke-width="2"/>
+      <path d="M 192,113 A40,100 0 0, 0 237,113"/>
+      <line x1="395" y1="240" x2="395" y2="185" stroke="#01B9FF" stroke-width="3"/>
+      <line x1="380" y1="185" x2="410" y2="185" stroke="#01B9FF" stroke-width="3"/>
+      <line x1="215" y1="160" x2="380" y2="185" stroke="#000" stroke-width="2"/>
+      <line x1="215" y1="150" x2="410" y2="185" stroke="#000" stroke-width="2"/>
+      <line x1="285" y1="330" x2="310" y2="290" stroke="#000" stroke-width="2"/>
+      <line x1="280" y1="325" x2="290" y2="332" stroke="#000" stroke-width="2"/>
+      <line x1="304" y1="285" x2="315" y2="293" stroke="#000" stroke-width="2"/>
+      <polyline points="215,205 260,225 287,330" fill="rgba(255, 255, 255, 0.1)" stroke="#000" stroke-width="2"/>
+      <polyline points="215,205 290,225 310,290" fill="rgba(255, 255, 255, 0.1)" stroke="#000" stroke-width="2"/>
+    </svg>
+    </section>
+
+    <section id="3d" class="sect">
+      <article>
+        <h2>Куб-галерея</h2>
+        <p>
+          <span class="line">3D графика</span> – это процесс создания объемной модели.
+            Изображение в трёхмерном пространстве открывает новые возможности и идеи оформления сайта.
+        </p>
+      </article>
+      <div class="contain">
+        <button class="arrow a-top"></button>
+        <button class="arrow a-bottom"></button>
+        <button class="arrow a-left"></button>
+        <button class="arrow a-right"></button>
+        <div class="cube">
+            <span class="n1"></span>
+            <span class="n2"></span>
+            <span class="n3"></span>
+            <span class="n4"></span>
+            <span class="n5"></span>
+            <span class="n6"></span>
+        </div>
+    </div>
+    </section>
+
+    <section id="сanvas">
+      <article>
+        <h2>Canvas и js</h2>
+        <p>
+          <span class="line">Canvas</span>- построение растрового двухмерного изображения при помощи скриптов (JavaScript) <br/>
+          Canvas позволяет разместить на холсте: картинку, видео, текст <br />
+          Используется, как правило, для отрисовки графиков для статей и игрового поля в некоторых браузерных играх
+        </p>
+      </article>
+      <section id="game">
+      <h1 id="zag">Arkanoid</h1>
+    <menu>
+      <li>Платформа управляется с помощью стрелочек влево-вправо</li>
+      <li>Для запуска игры нажмите кнопку <button id="my_btn1">START</button>, а для перезапуска кнопку <button id="my_btn2">RETRY</button></li>
+    </menu>
+
+  <canvas width="790" height="310" id="my_game"></canvas>
+  <script>
+    "use strict";
+    function start(){
+        var gm = my_game.getContext("2d");
+        var
+          x = 300,
+          y = 10,
+          vx = 1,
+          vy = 2;
+        var
+          pc_x = 350,
+          pc_y = 270;
+        var count = 0;
+
+        function animation() {
+          window.requestAnimationFrame(animation);
+          gm.clearRect(0, 0, my_game.width, my_game.height);
+          gm.beginPath();
+          gm.arc(x, y, 8, 0, 2*Math.PI, true)
+          gm.fillStyle = "#ffc0c5";
+          gm.strokeStyle = "#000";
+            gm.lineWidth = "0.5";
+   	      gm.fill();
+          gm.stroke();
+          gm.fillStyle = "#8000ff";
+          gm.font = "40px Arial";
+          gm.fillText(count, 375, 90);
+   	      x = x + vx;
+   	      y = y + vy;
+   	      if ((x > 782) || (x < 10)){
+            vx = -vx;
+          }
+          if (y < 10){
+            vy = -vy;
+          }
+   	      if (y > 271) {
+            x = 395;
+            y = 261;
+            pc_x = 350;
+            pc_y = 270;
+            vx = 0;
+            vy = 0;
+            my_btn2.addEventListener("click", start);
+          }
+          if ((y + 5 > pc_y) && (pc_x - 5 < x) && (pc_x + 95 > x)){
+            vy = -vy;
+            count++;
+            if (count == 3){
+              if (vx < 0)
+                vx = vx - 0.2;
+              else
+                vx = vx + 0.2;
+              vy = vy - 0.2;
+            }
+            if (count == 5){
+              if (vx < 0)
+                vx = vx - 0.4;
+              else
+                vx = vx + 0.4;
+              vy = vy - 0.4;
+            }
+            if (count == 10){
+              if(vx < 0)
+                vx = vx - 0.3;
+              else
+                vx = vx + 0.3;
+              vy = vy - 0.3;
+            }
+            if (count == 20){
+              if(vx < 0)
+                vx = vx - 0.3;
+              else
+                vx = vx + 0.3;
+              vy = vy - 0.3;
+            }
+            if (count == 40){
+              if(vx < 0)
+                vx = vx - 0.3;
+              else
+                vx = vx + 0.3;
+              vy = vy - 0.3;
+            }
+            if (count == 60){
+              if(vx < 0)
+                vx = vx - 0.3;
+              else
+                vx = vx + 0.3;
+              vy = vy - 0.3;
+            }
+            if (count == 100){
+              if(vx < 0)
+                vx = vx - 0.4;
+              else
+                vx = vx + 0.4;
+              vy = vy - 0.4;
+            }
+          }
+          gm.beginPath();
+          gm.lineWidth = "2";
+          gm.strokeStyle = "#009a63";
+          gm.moveTo(0, 276);
+          gm.lineTo(790, 276);
+          gm.stroke();
+          gm.fillStyle = "#ffa947";
+   	      gm.fillRect(pc_x, pc_y, 90, 12);
+          }
+
+          window.requestAnimationFrame(animation);
+
+        function navigate(event){
+          if ((event.keyCode == 39) && (pc_x + 10 < 700)) pc_x = pc_x + 10;
+          if ((event.keyCode == 37) && (pc_x - 10 > 0)) pc_x = pc_x - 10;
+          if ((event.keyCode == 39) && (pc_x + 5 < 700)) pc_x = pc_x + 5;
+          if ((event.keyCode == 37) && (pc_x - 5 > 0)) pc_x = pc_x - 5;
+        }
+        document.addEventListener("keydown", navigate);
+    }
+        my_btn1.addEventListener("click", start);
+      </script>
+    </section>
+  </section>
+
+  </main>
+
+  <footer id="contacts">
+    <hr />
+    <p id="end">
+      Автор: Денисов Степан <br />
+      Телефонный номер:  +7 (916) 965-45-54 <br />
+      E-mail: denisov1811@yandex.ru <br />
+    </p>
+    <a href="#" title="К началу" class="topbutton"></a>
+  </footer>
+
+</body>
+
+</html>

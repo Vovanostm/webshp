@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0 10px;
+    font-family: "PT Sans", serif;
+    font-size: 16px;
+    color: #333;
+    height: 100%;
+    font-style: normal;
+    text-align: center
+}
+
+table {
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+h3{
+    text-align: center;
+    color: aqua;
+}
+
+h2{
+    color: green;
+    text-align: center;
+}
+
+td {
+    border: 3px solid lightgray;
+}
+
+::selection {
+    background: yellow;
+    text-shadow: none;
+}
+
+body{
+    margin: 15px;
+    padding: 20px;
+  font: 100 1.4em/1.3 sans-serif;
+  text-align: justify;
+  background-color: #fefefe;
+    background-image: url(http://igor99.ru/images/pattern.png);
+    background-repeat: repeat ;
+    background-attachment: fixed;
+}
+article{
+    margin-top: 40px;
+}
+h2{
+  margin-top: 30px;
+}
+
+h1{
+    text-align: center;
+    color: coral;
+}
+
+header{
+  text-align: left;
+    background-color: skyblue;
+    margin: 30px;
+    padding: 40px;
+    border-radius: 30px;
+    
+}
+
+nav ol{
+  list-style:none;
+}
+
+
+
+
+.clear {
+    clear: none; /* Отмена обтекания */
+   }
+
+div{
+    margin: 30px;
+    padding: 40px;
+    background-color: aqua;
+    border-radius: 30px;
+    
+}
+
+.menu ul {
+  width: auto;
+  margin: 0 auto;
+  padding-left: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.menu li {
+  float: left;
+  width: 25%;
+}
+
+.menu a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 0.5em 0;
+  font-size: 2em;
+  font-weight: bold;
+  transition: 0.5s ease-in-out;
+}
+
+.menu a:hover {
+  color: lime;
+}
+
+img{
+    border-radius: 30px;
+}

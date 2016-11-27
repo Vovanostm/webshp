@@ -1,0 +1,379 @@
+/* Styles go here */
+
+nav {
+  background: none repeat scroll 0 0 white;
+  box-shadow: 0 3px 5px grey;
+  position: relative;
+  text-align: center;
+}
+
+nav:hover a {
+  color: transparent;
+  text-shadow: 0 0 5px black;
+}
+
+nav a {
+  color: #333;
+  display: inline-block;
+  font-family: tahoma;
+  font-size: 1.25em;
+  height: 66px;
+  line-height: 66px;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  width: 150px;
+}
+
+nav a:hover {
+  border-bottom: 5px solid #A07FB8;
+  color: #A07FB8;
+  text-shadow: none;
+}
+
+.body {
+  background-color: #F2F2F2;
+}
+
+.header {
+  text-align: center;
+  font-family: tahoma;
+  font-size: 1.25em;
+}
+
+.effect {
+  position: relative;
+  margin: 30px;
+  display:inline-block;
+}
+
+.effect img {
+  width: 100%;
+  height: 100%;
+}
+
+.eff-6-2 {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.eff-6-2 .caption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  -o-transform-origin: center bottom;
+  -moz-transform-origin: center bottom;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -o-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  -o-transition: all 0.4s cubic-bezier(0.4, 0, 1, 1) 0s;
+  -moz-transition: all 0.4s cubic-bezier(0.4, 0, 1, 1) 0s;
+  -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 1, 1) 0s;
+  -ms-transition: all 0.4s cubic-bezier(0.4, 0, 1, 1) 0s;
+  transition: all 0.4s cubic-bezier(0.4, 0, 1, 1) 0s;
+}
+
+.eff-6-2 .caption h4 {
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.eff-6-2 .caption p {
+  margin: 15px 0px;
+  text-align: center;
+  font-style: tahoma;
+  padding: 0px 10px;
+}
+
+.eff-6-2 .caption a.btn {
+  width: 120px;
+  text-align: center;
+  display: block;
+  background-color: #DEC0F1;
+  color: #333;
+  padding: 10px 0px;
+  border-radius: 5px;
+  margin: 0px auto 0px auto;
+}
+
+.eff-6-2:hover .caption {
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.p {
+  font-family: tahoma;
+  font-size: 1em;
+  margin: 20px;
+}
+
+.art {
+  font-family: tahoma;
+  font-size: 1em;
+  margin: 20px;
+}
+
+.header {
+  color: #A07FB8;
+}
+
+.p1 {
+  font-family: tahoma;
+  font-size: 1em;
+  margin: 20px;
+  color: #A07FB8
+}
+
+.effect {
+  position: relative;
+} 
+.effect img {
+  width: 100%;
+  height: 100%;
+}
+.eff-10-2 {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+.eff-10-2 .caption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.eff-10-2 .caption h4 {
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  margin: 20px auto 0px auto;
+  width: calc(100% - 8px);
+  position: relative;
+  top: -100%;
+  -o-transition: all 0.3s linear 0.2s;
+  -moz-transition: all 0.3s linear 0.2s;
+  -webkit-transition: all 0.3s linear 0.2s;
+  -ms-transition: all 0.3s linear 0.2s;
+  transition: all 0.3s linear 0.2s;
+}
+.eff-10-2 .caption p {
+  margin: 15px 0px;
+  text-align: center;
+  font-style: italic;
+  padding: 0px 10px;
+  position: relative;
+  top: -100%;
+  -o-transition: all 0.3s linear 0.1s;
+  -moz-transition: all 0.3s linear 0.1s;
+  -webkit-transition: all 0.3s linear 0.1s;
+  -ms-transition: all 0.3s linear 0.1s;
+  transition: all 0.3s linear 0.1s;
+}
+.eff-10-2 .caption a.btn {
+  width: 120px;
+  text-align: center;
+  display: block;
+  background: #A07FB8;
+  color: #fff;
+  padding: 10px 0px;
+  border-radius: 5px;
+  margin: 0px auto 0px auto;
+  position: relative;
+  top: -100%;
+  -o-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -webkit-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.eff-10-2 .overlay-1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #43423F;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  -o-transition: all 0.3s linear 0.3s;
+  -moz-transition: all 0.3s linear 0.3s;
+  -webkit-transition: all 0.3s linear 0.3s;
+  -ms-transition: all 0.3s linear 0.3s;
+  transition: all 0.3s linear 0.3s;
+}
+.eff-10-2 .overlay-2 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: transparent;
+  border: 4px double #fff;
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+  -o-transition: all 0.3s linear 0.3s;
+  -moz-transition: all 0.3s linear 0.3s;
+  -webkit-transition: all 0.3s linear 0.3s;
+  -ms-transition: all 0.3s linear 0.3s;
+  transition: all 0.3s linear 0.3s;
+}
+.eff-10-2:hover .overlay-1 {
+  width: 100%;
+  height: 100%;
+  -moz-transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+} 
+.eff-10-2:hover .overlay-2 {
+  width: 100%;
+  max-width: calc(100% - 8px);
+  height: 100%;
+  max-height: calc(100% - 8px);
+  opacity: 1;
+  -moz-transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+} 
+.eff-10-2:hover .caption a.btn,
+.eff-10-2:hover .caption p,
+.eff-10-2:hover .caption h4 {
+  top: 0px;
+}
+.eff-10-2:hover .caption a.btn {
+  -moz-transition-delay: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  -ms-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.eff-10-2:hover .caption p {
+  -moz-transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  -ms-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.eff-10-2:hover .caption h4 {
+  -moz-transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  -ms-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}   
+
+.banner{
+  text-align:center;
+  margin:30px;
+}
+.footer{
+  font-family: tahoma;
+  font-size: 1em;
+  margin:15px;
+  text-align:center;
+  border:solid 2px ;
+  padding:5px;
+}
+
+.map{
+  margin:20px;
+  display:block;
+}
+.text{
+  display:block;
+  margin:30px;
+  width:500px;
+  height:400px;
+}
+.stretch1{
+  width:350px;
+  margin:20px;
+  display:inline-block;
+  float:left;
+}
+.break1{
+  width:350px;
+  margin:20px;
+  display:inline-block;
+  float:right;
+}
+.hip-hop1{
+  width:350px;
+  margin:20px;
+  display:inline-block;
+  float:left;
+}
+.rnb1{
+   width:350px;
+  margin:20px;
+  display:inline-block;
+  float:right;
+}
+.jazz1{
+  width:300px;
+  margin:20px;
+  display:inline-block;
+  float:left;
+}
+
+
+
+
+body {
+ margin: 10px 0 0 0;
+ 
+ text-align: center;
+}
+.gallery {
+ text-align: center;
+ font-size: 0;
+ margin-top:200px;
+ margin-bottom:100px;
+}
+.gallery img {
+ width: 250px;
+ height: 150px;
+ margin: 2px 4px;
+ -webkit-transition: 400ms 50ms;
+ transition: 400ms 50ms;
+}
+.gallery:hover img:not(:hover) {
+ -webkit-filter: saturate(50%);
+ filter: saturate(50%);
+ opacity: 0.4;
+ -webkit-transition-delay: 0ms;
+ transition-delay: 0ms;
+}
+a {
+ color: #FFF;
+ font-size: 23px;
+ text-decoration:none;
+}
+a:hover {
+ text-decoration:underline;
+}

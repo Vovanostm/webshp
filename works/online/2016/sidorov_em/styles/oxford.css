@@ -1,0 +1,63 @@
+a{
+  color:#eeeeee;
+}
+a:hover{
+  color:#0B2148;
+}
+.menu{
+  background-color:#0B2148;
+}
+li{
+  color:#E6E6E6;
+}
+#ist{
+  color:black;
+}
+li:hover{
+  background-color:#e6e6e6;
+  color:#0B2148;
+}
+.photo1{
+  background-image:url(https://drscdn.500px.org/photo/73342503/m%3D2048/7653fdff3c4508785c422fdd51e7445a);
+  background-position:30% 20%;
+}
+h1{
+  background-color:#0B2148;
+  color:#e6e6e6;
+}
+p{
+  font-weight:lighter;
+}
+h2{
+  color:#0B2148;
+}
+.photo2{
+  background-image:url(http://watchlooksee.com/wp-content/uploads/2014/04/commercial_1.jpg);
+  background-position:50% 80%;
+}
+.a2{
+  background-color:#0B2148;
+}
+.p1{
+  background-image:url(http://images.boomsbeat.com/data/images/full/18476/oxford-university_1-jpg.jpg);
+}
+.p2{
+  background-image:url(https://upload.wikimedia.org/wikipedia/commons/4/4a/Graz_University-Library_reading-room.jpg);
+}
+.p3{
+  background-image:url(http://www.prostokniga.com.ua/var/corporate_site/storage/images/media/images/prostokniga_com_ua/fotogalerei/2014/samye_unikalnye_biblioteki_mira/velikobritaniya_oksford_oksfordshir_biblioteka_kodringtona_pri_kolledzhe_vseh_svyatyh/658990-1-rus-RU/velikobritaniya_oksford_oksfordshir_biblioteka_kodringtona_pri_kolledzhe_vseh_svyatyh.jpg);
+
+}
+.p4{
+  background-image:url(http://static.panoramio.com/photos/large/7517547.jpg);
+}
+.p5{
+  background-image:url(http://img1.liveinternet.ru/images/attach/c/9/126/581/126581023_6374094649_3ec359790e_b.jpg);
+}
+.p6{
+  background-image:url(http://www.imperialinnovations.co.uk/media/uploads/files/Oxford_-_Ventures_-_Carousel.jpg);
+}
+.foot{
+  background-color:#0B2148;
+  color:gray;
+}

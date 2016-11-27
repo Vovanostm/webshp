@@ -1,0 +1,17 @@
+.photo {
+  display: inline-block;
+  border-style: hidden;
+  border-width: 1px;
+  border-color: red;
+  width: 30%;
+  height: 300px;
+  margin: 1%;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  background-color: rgb(230, 230, 255);
+}

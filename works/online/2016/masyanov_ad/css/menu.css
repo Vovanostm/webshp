@@ -1,0 +1,82 @@
+.menu ul li {
+    list-style: none;
+    margin: 5px 80px;
+    border: 2px rgba(255, 255, 255, 0) solid;
+    border-radius: 5px;
+}
+.menu{
+  z-index: 9999;
+}
+.menu ul {
+    text-align: center;
+    padding-left: 0;
+}
+.menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+}
+.topbutton {
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+@media (max-width:519px) {
+
+    .menu ul li {
+        border: 2px #0073c6 groove;
+        border-radius: 10px;
+    }
+    .menu a {
+        color: rgb(37, 37, 37);
+    }
+}
+h1 {
+    color: rgb(37, 37, 37);
+}
+
+@media (min-width:520px) {
+    .up_menu {
+      top:0;
+        background-color: #ffffff;
+        height: 147px;
+        width: 100%;
+    }
+    .menu ul li {
+        margin: 5px;
+        display: inline-block;
+        padding: 5px;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+    }
+    .menu ul li:hover {
+        border: 1px rgb(0, 0, 0) solid;
+        -webkit-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+                transform: translateY(-10px);
+    }
+    .menu ul {
+        padding-left: 0;
+    }
+    .menu a {
+        font-size: 15px;
+        color: rgb(85, 85, 85);
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+    .menu li:hover{
+      background-color: #0073c6;
+    }
+    .menu li:hover a {
+        color: rgb(255, 255, 255);
+    }
+}
+@media (min-width:580px) {
+  .menu a{
+    font-size: 20px;
+  }
+}
+@media (min-width:990px) {}

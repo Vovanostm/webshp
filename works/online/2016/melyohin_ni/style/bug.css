@@ -1,0 +1,63 @@
+html, section, article{
+  height: 100%;
+}
+body{
+   font-family: 'Product Sans', 'Source Sans Pro';
+   font-size: 1.6em;
+   height: 100%;
+   margin: 0px;
+}
+  .pro{
+    width: 100%;
+    position: fixed;
+    background-color: rgb(66, 133, 244);
+  }
+  .lesson{
+    padding: 2px;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+    }
+  a{
+    text-decoration: none;
+  }
+  .lesson > a{
+   text-decoration: none;
+   color: white;
+ }
+   @media (min-width:750px){
+     body{
+        font-family: 'Product Sans', 'Source Sans Pro';
+        font-size: 1.5em;
+        height: 100%;
+        margin: 0px;
+      }
+   }
+     @media (min-width:1050px){
+       body{
+          font-family: 'Product Sans', 'Source Sans Pro';
+          font-size: 1.2em;
+          height: 100%;
+          margin: 0px;
+        }
+       .pro{
+         height: 40px;
+         position: fixed;
+         right: 0px;
+         width: 100%;
+         margin: 0;
+         background-color: rgb(66, 133, 244);
+       }
+      .lesson >a::after {
+         content:"";
+         display:block;
+         margin: auto;
+         height:3px;
+         width:60%;
+         background-color: white;
+         transition:all .7s;
+        }
+      a:hover::after {
+        width:100%;
+      }
+    }

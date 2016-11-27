@@ -1,0 +1,236 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic);
+html, body {
+  font-family: Open Sans;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header,h2,h1 {
+  font-family: PT Sans;
+  text-align: center;
+}
+
+.history, body > footer, .nav {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+a {
+  font-style: normal;
+  text-decoration: none;
+  color: blue;
+}
+
+h3 {
+  font-style: normal;
+  font-size: 1.3em;
+  color: #810000;
+  display: inline;
+}
+
+dfn {
+  font-style: normal;
+  font-size: 1.3em;
+  color: #810000;
+}
+
+.h {
+  position: relative;
+  font-size: 1.2em;
+  height: 100%;
+  width: 100%;
+}
+
+.h div {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  transition: .5s;
+}
+
+.h:hover div {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.h img {
+  height: 100%;
+  width: 100%;
+}
+
+.history img {
+  width: 100%;
+  height: 100%;
+}
+
+.history div {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  bottom: 5%;
+  position: absolute;
+  transition: .5s;
+}
+
+.history:hover div {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.history header {
+  width: 100%;
+  top: 0;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.history {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.nav {
+  position: static;
+  background-color: lightblue;
+  margin: 0;
+  padding: 1px;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.nav h2 {
+  position: relative;
+  width: 90%;
+  margin: 5%;
+  border-radius: 10%;
+  transition: .5s;
+}
+
+.nav:hover h2 {
+  background-color: rgba(255,255,255,0.5);
+}
+
+.nav div {
+  width: 90%;
+  border-radius: 7%;
+  margin: auto 5%;
+  transition: .5s;
+}
+
+.nav:hover div {
+  background-color: rgba(255,255,255,0.4);
+}
+
+.n {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 3% auto 5%;
+  border-radius: 5%;
+  transition: .5s;
+}
+
+.n img{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  border-radius: 50%;
+  transition: .5s;
+}
+
+.n p {
+  width: 100%;
+  display: block;
+  transition: .5s;
+  font-size: 1.3em;
+}
+
+.n:hover img {
+  transform: translate(0,-50px);
+}
+
+.n:hover p {
+  font-size: 1.5em;
+  transform: translate(0,-50px);
+}
+
+.stily {
+  background-color: rgb(113, 202, 242);
+  padding: 1px;
+}
+
+.s {
+  position: relative;
+  width: 80%;
+  margin: 10%;
+  border-radius: 5%;
+  transition: .5s;
+}
+
+.s img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+.s div {
+  position: absolute;
+  transition: .5s;
+  bottom: 10%;
+  width: 100%;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.s:hover div {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.compet {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.compet > img {
+  width: 100%;
+  height: 100%;
+}
+
+.c {
+  position: absolute;
+  top: 20%;
+  transition: .5s;
+}
+
+.compet:hover > .c {
+  background-color: rgba(255,255,255,0.65);
+}
+
+li {
+  margin-bottom: 3%;
+}
+
+footer li {
+  padding: 5%;
+  margin: 4% 0;
+  list-style-type: none;
+}
+
+footer {
+  animation: back 5s infinite alternate;
+  background-color: lightyellow;
+  transition: .5s;
+}
+
+footer:hover {
+  background-color: lightgreen;
+}

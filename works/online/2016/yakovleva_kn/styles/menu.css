@@ -1,0 +1,26 @@
+
+
+
+.u{
+  height:100%;
+  attachment:fixed;
+  padding:5px;
+}
+
+ nav{
+  width: 100%;
+  text-align:center;
+ bottom:85%;
+}
+
+.u nav ol{
+  background: rgba(255,255,255,0.5);
+  padding:30px;
+  margin:auto;
+
+}
+.u nav ol li{
+  display: inline-block;
+  margin:3%;
+  font-size: 1.5em;
+}

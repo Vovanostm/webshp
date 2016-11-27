@@ -1,0 +1,35 @@
+.sect{
+  height: 100%;
+  padding-bottom: 100px;
+}
+h2{
+  padding-top: 10px;
+  font-size: 1.2em;
+  text-align: center;
+}
+h2::after {
+  content: "";
+  display:block;
+  margin: 25px auto;
+  height:2px;
+  background-color:rgb(96, 200, 204);
+  color: black;
+  width:30%;
+  transition:all 1s;
+}
+h2:hover::after {
+  width:40%;
+}
+h2::before {
+  content: "";
+  display:block;
+  margin: 25px auto;
+  height:2px;
+  background-color:rgb(96, 200, 204);
+  color: black;
+  width:30%;
+  transition:all 1s;
+}
+h2:hover::before {
+  width:40%;
+}

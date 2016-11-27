@@ -1,0 +1,40 @@
+body{ font-family:fantasy;
+color:white;
+background-attachment:fixed;
+text-align:center;
+}
+footer{
+  size:60%;
+  font-style: italic;
+  color: white;
+  font-size:10px;
+}
+header{
+  font-size:75px;
+  font-weight:900;
+  margin: 40px 50px -50px 50px;
+}
+h1{margin: 40px 50px -50px 50px;
+  font-size:40px;
+}
+h2{margin: 80px 50px -90px 50px;
+  font-size:30px;
+}
+h3{/*margin: 40px 50px -70px 50px;*/
+  font-size:20px;
+}
+article{  font-size:20px;
+  text-align:left;
+  font-style:oblique;
+  font-weight:100;
+}
+nav{margin: -90px 20px 50px 20px;
+  font-style:normal;
+  color:yellow;
+}
+img{height:500px;width:800px;
+margin: -90px 20px 50px 20px;}
+section{border: 5px solid gray;
+  margin: 100px 10px 100px 10px;
+}
+button{width:175px; height:50px; font-size:20px;}

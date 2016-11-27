@@ -1,0 +1,163 @@
+
+body{
+  background-image: url("../img/backgrd.jpg");
+  background-size: cover;
+
+}
+p{
+  padding:10px;
+}
+body{
+  color:#F0FFFF;
+  width:100%;
+  text-align:center;
+  margin:auto;
+  font-size: 1.2em;
+  font-family: sans-serif;
+  padding:10px;
+}
+.d_n{
+  width:100%;
+  padding:3px;
+}
+.d{
+  margin-top:0px;
+  height:100%;
+}
+h1{
+  color:#1C86EE;
+  font-family:monospace;
+  font-size:3em;
+}
+h2{
+  text-align:center;
+  color:#AB82FF;
+  font-family: cursive;
+  font-size:2em;
+}
+.slider{
+	width: 640px;
+	position: relative;
+	padding-top: 310px;
+
+	margin: 100px auto;
+border-radius:45px;
+}
+
+
+
+.slider>img{
+	position: absolute;
+	left: 0; top: 0;
+	transition: all 1s;
+  border-radius:45px;
+}
+
+.slider input[name='slide_switch'] {
+	display: none;
+}
+
+.slider label {
+
+	margin: 18px 0 0 18px;
+	border: 3px solid #999;
+border-radius:15px;
+	float: left;
+	cursor: pointer;
+	transition: all 0.5s;
+
+
+	opacity: 0.6;
+}
+
+.slider label img{
+	display: block;
+  border-radius:15px;
+}
+
+
+.slider input[name='slide_switch']:checked+label {
+	border-color: #666;
+	opacity: 1;
+}
+
+
+.slider input[name='slide_switch'] ~ img {
+	opacity: 0;
+	transform: scale(1.1);
+}
+
+.slider input[name='slide_switch']:checked+label+img {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.n{
+  height:100%;
+  margin-bottom:100px;
+  margin-top:100px;
+}
+.l{
+  height:100px;
+}
+h3{
+  color:#FF6347;
+}
+cite p{
+  color:#FFDAB9;
+}
+.m{
+  background:rgba(79,79,79,0.5);
+  font-size: 0.9em;
+  height:100%;
+}
+.m {
+  padding:50px;
+  margin:auto;
+  text-align:left;
+}
+
+.o{
+  height:100%;
+margin-top:100px;
+margin-bottom:100px;
+}
+@media (max-width:800px){
+  body{
+    font-size: 1.5em;
+    font-family: sans-serif;
+  }
+  .slider{
+    width:100%;
+  }
+  .slider>img{
+    width:100%;
+
+  }
+  .u nav ol li{
+    display:block;
+    margin:auto;
+    margin-top:10px;
+  }
+  iframe{
+    width:100%;
+  }
+}
+@media (min-width:1200px){
+  body{
+    font-size: 1.4em/1.3em;
+    font-family: sans-serif;
+  }
+}
+.h{
+margin-top:100px;
+margin-bottom:100px;
+}
+.b{
+margin-top:100px;
+margin-bottom:100px;
+}
+.a{
+margin-top:100px;
+margin-bottom:100px;
+}

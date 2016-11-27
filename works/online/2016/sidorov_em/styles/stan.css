@@ -1,0 +1,68 @@
+
+a{
+  color:#eeeeee;
+}
+a:hover{
+  color:#8A0029;
+}
+.menu{
+  height:80px;
+  width:100%;
+  background-color:#8A0029;
+}
+#ist{
+  color:black;
+}
+#li1{
+  color:#E6E6E6;
+}
+#li1:hover{
+  background-color:#e6e6e6;
+  color:#0B2148;
+}
+.photo1{
+  background-image:url(http://cdn-media-2.lifehack.org/wp-content/files/2014/05/Stanford.jpg);
+  background-position:50% 80%;
+}
+h1{
+  background-color:#8A0029;
+  color:#e6e6e6;
+}
+h2{
+  color:#8A0029;
+}
+.photo2{
+  background-image:url(http://static.comicvine.com/uploads/original/11114/111144184/4273824-hero-positions.jpg);
+  background-position:50% 30%;
+}
+.a2{
+  background-color:#8A0029;
+}
+.p1{
+  background-image:url(http://www.arqred.mx/blog/wp-content/uploads/2009/09/stanford-university.jpg);
+}
+.p2{
+  background-image:url(http://www.hij.ru/upload/medialibrary/968/9687c9e27f89aa971f4a752626d8cdac.jpg);
+}
+.p3{
+  background-image:url(http://blog.mancrates.com/wp-content/uploads/2012/09/800px-Stanstadium_view.jpeg);
+
+}
+.p4{
+  background-image:url(http://first-americans.mold.su/images/newimage31/StanfordUniversity.jpg);
+}
+.p5{
+  background-image:url(http://medbe.ru/upload/medialibrary/484/medbe.ru_meditzinskie_novosti_12102013_3.jpg);
+}
+.p6{
+  background-image:url(http://botinok.co.il/sites/default/files/images/146e26b0cbc07c579c80664dafc53d3b_Stanford.jpg);
+}
+.foot{
+  height:100px;
+  background-color:#8A0029;
+  padding:5px;
+  color:gray;
+}
+strong{
+  color:#8A0029;
+}

@@ -1,0 +1,74 @@
+
+a{
+  color:black;
+}
+a:hover{
+  color:black;
+}
+.menu{
+  background-color:white;
+}
+#ist{
+  color:black;
+}
+#li1:hover{
+  background-color:#e6e6e6;
+}
+.photo1{
+  background-image:url(http://to-world-travel.ru/img/2015/041917/3102559);
+  background-position:50% 60%;
+}
+h1{
+  background-color:white;
+  color:black;
+}
+p{
+  color:#A4A4A4;
+}
+h2{
+  color:#E6E6E6;
+}
+.photo2{
+  background-image:url(http://oidnes.cz/09/072/maxi/STF2c6b95_NWS_663262.jpg);
+  background-position:50% 40%;
+}
+.a2{
+  background-color:white;
+}
+.p1{
+  background-image:url(http://club.foto.ru/gallery/images/photo/2004/08/17/257974.jpg);
+}
+.p2{
+  background-image:url(http://test.scientificrussia.ru/data/shared/langsdorf/IMG_2582.jpg);
+}
+.p3{
+  background-image:url(http://atlantic.ginras.ru/staff/mazarovich/mgu_klub.jpg);
+
+}
+.p4{
+  background-image:url(http://i4.imageban.ru/thumbs/2012.01.16/4c11de91b017ed407a0db299e1af6187.jpg);
+}
+.p5{
+  background-image:url(http://www.izhevskinfo.ru/pictures/news/30520.jpg);
+}
+.p6{
+  background-image:url(http://s5.afisha.net/MediaStorage/7ac041d70aef464398921a5ad411.jpg);
+}
+.foot{
+  background-color:white;
+  color:black;
+}
+strong{
+  color:#8A0029;
+}
+
+#sec1, #sec2 ,#sec3{
+  background-color:#585858;
+}
+ul, ol{
+  color:#A4A4A4;
+}
+#f{
+  color:#A4A4A4;
+  font-size:85%;
+}

@@ -1,0 +1,192 @@
+@import url(https://fonts.googleapis.com/css?family=Comfortaa&subset=latin,cyrillic);
+
+#toTop {
+width:100px;
+border:2px solid #000000;
+background:#FFFFFF;
+text-align:center;
+padding:5px;
+position:fixed;
+bottom:40px; /* отступ кнопки от нижнего края страницы*/
+right:20px;
+cursor:pointer;
+display:none;
+color:#333;
+font-family:'Comfortaa', cursive;;
+font-size:15px;
+}
+
+html, body{
+margin: 0;
+height: 100%;
+width:100%;
+}
+
+html{
+  overflow-x:hidden;
+}
+
+h1{
+  color: black;
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+h2{
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  font-size: 2em;
+}
+
+h3{
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+nav{
+  width:100%;
+  text-align: center;
+  display:inline-block;
+  font-family: 'Comfortaa', cursive;
+}
+
+nav a{
+  text-decoration: none;
+  color:black;
+  margin: 15px;
+  font-size: 28px;
+  padding: 1px;
+}
+
+a:hover{
+  font-size:30px;
+  font-weight: bolder;
+}
+
+a{
+  transition: all 1s;
+  line-height: 1;
+  display: inline-block;
+  color:#0C1A87;
+  text-decoration:none;
+  cursor: pointer;
+}
+
+a:after {
+  display: block;
+  content: "";
+  height: 4px;
+  width: 0%;
+  background-color: #0C1A87;
+  transition: width .5s ease-in-out;
+}
+
+a:hover:after,
+a:focus:after {
+  width: 100%;
+}
+
+p{
+  text-align:left;
+  color: black;
+  font-family: 'Comfortaa', cursive;
+  margin-left: 170px;
+  margin-right: 170px;
+}
+
+.win img{
+  border: 5px solid black;
+  padding: 5px;
+  margin: 10px;
+}
+
+.one{
+background: url('../img/2015_1.jpg');
+position: relative;
+height: 100%;
+background-size: cover;
+margin:0;
+}
+
+.two{
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+}
+
+.help{
+    padding:50px;
+}
+
+hr{
+  border: none;
+  color: black;
+  background-color: black;
+  width: 1000px;
+  height:3px;
+}
+
+
+
+
+table {
+  margin:auto;
+  font:100 1.2em/1.5 sans-serif;
+  font-size: 20px;
+}
+tr{
+    transition: all 1s;
+}
+th {
+  font-weight: normal;
+  color: #039;
+  padding: 10px 15px;
+}
+td {
+  color: black;
+  border-top: 1px solid #e8edff;
+  padding: 10px 15px;
+  text-align: center;
+}
+tr:hover{
+  background-color: #416788;
+}
+.top{
+  background-color: #1CB25D;
+  color: black;
+}
+.tabl img{
+  border-radius: 50%;
+  vertical-align:middle;
+}
+.pol_top{
+  background-color: #70FFAE;
+}
+.untop{
+  background-color: #FF4747;
+}
+.winner{
+  background-color: gold;
+}
+.second{
+  background-color: silver;
+}
+.third{
+  background-color: #cc7e31;
+}
+
+
+footer{
+text-align: center;
+font-size: 1em;
+font-weight: bolder;
+color: #000000;
+font-family: 'Comfortaa', cursive;
+padding: 17px;
+}
+
+footer a:hover{
+  font-size: 1.3em;
+  font-weight: bolder;
+}

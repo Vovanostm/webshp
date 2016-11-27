@@ -38,13 +38,38 @@
       </menu>
       <h2>Год</h2>
       <menu>
-        <li><label><input type="checkbox" checked="checked" name="year" id="y15">2015</label></li>
-        <li><label><input type="checkbox" checked="checked" name="year" id="y14">2014</label></li>
-        <li><label><input type="checkbox" checked="checked" name="year" id="y13">2013</label></li>
-        <li><label><input type="checkbox" checked="checked" name="year" id="y12">2012</label></li>
+        <li><label><input type="checkbox" checked="checked" name="year" id="y16">2015-2016</label></li>
+        <li><label><input type="checkbox" checked="checked" name="year" id="y15">2014-2015</label></li>
+        <li><label><input type="checkbox" checked="checked" name="year" id="y14">2013-2014</label></li>
+        <li><label><input type="checkbox" checked="checked" name="year" id="y13">2012-2013</label></li>
+        <li><label><input type="checkbox" checked="checked" name="year" id="y12">2011-2012</label></li>
       </menu>
       <section>
         <article class="no_list">
+          <h3>2016 год</h3>
+          <h4>Web_online</h4>
+          <div id="web_online_2016">
+          </div>
+          <script>
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'serv.php', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.send();
+            xhr.onreadystatechange = function() {
+              if (xhr.readyState != 4) return;
+              if (xhr.status != 200) {
+                console.log("smbf_wrong");
+              } else {
+                var cart = JSON.parse ( xhr.responseText );
+                var list = ' '
+                for (var i = 0; i < cart.length; i++){
+                  list += '<p><a class="no_aj" href="'+cart[i].name+'">'+cart[i].name+'</a></p>'
+                }
+                web_online_2016.innerHTML = list;
+              }
+
+            }
+          </script>
           <h3>2015 год</h3>
           <h4>HTML</h4>
             <p><a class="no_aj" href="/works/html/2015/Afanas'ev/page1.html">Афанасьев Виталий</a></p>
@@ -54,9 +79,9 @@
             <p><a class="no_aj" href="/works/html/2015/Mashkov/start.html">Максимов Алексей</a></p>
             <p><a class="no_aj" href="/works/html/2015/Chikun/">Дима Чикун</a></p>
           <h4>CSS</h4>
-            <p><a class="no_aj" href="/works/css/2015/Makarenko/">Макаренко Даниил</a></p>
+            <p><a class="no_aj" href="/works/css/2015/Makarenko/1.html">Макаренко Даниил</a></p>
             <p><a class="no_aj" href="/works/css/2015/Kalinkin/Main.html">Калинкин Иван</a></p>
-            <p><a class="no_aj" href="/works/css/2015/Makarenko/">Капунин Иван</a></p>
+            <p><a class="no_aj" href="/works/css/2015/Flyboard/">Капунин Иван</a></p>
           <h3>2014 год</h3>
           <h4>HTML</h4>
             <p><a class="no_aj" href="/works/html/2014/Podlegaev/Home.html">Подлегаев Эдмонд</a></p>

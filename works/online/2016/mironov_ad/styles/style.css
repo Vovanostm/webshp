@@ -1,0 +1,48 @@
+body{
+background:fixed url('../img/background.jpg') no-repeat;
+ background-size:cover;}
+section{
+  background-color:#7fc7ff;
+  border:2px ridge black;
+  border-radius:1em;
+  margin:5%;
+  padding:0 1% 3% 3%;
+}
+h1{
+  font-size:200%;
+  font-family:serif;
+  text-align:center;
+}
+h2{
+  font-size:120%;
+  font-family:serif;
+  text-align:center;
+}
+p{
+  text-align:justify;
+}
+footer{
+  font-size:70%;
+}
+article:hover{
+  border:2px ridge green;
+  border-radius:1em;
+  margin:5%;
+  padding:0 1% 2% 1%;
+}
+article:hover p{
+  font-size:120%;
+}
+article:hover h2{
+  font-size:150%;
+}
+li:hover{
+  font-size:120%;
+  padding:1% 1% 1% 1%;
+}
+img{
+  height:200px;
+}
+img:hover{
+  height:300px;
+}

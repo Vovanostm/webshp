@@ -1,0 +1,50 @@
+h3{
+  margin:0;
+  padding-left: 180px;
+}
+.container {
+  margin: 100px auto;
+  max-width: 660px;
+}
+.wrap {
+  width: 120px;
+  height: 120px;
+  background: #E6E0CA;
+  color: white;
+  display: inline-block;
+  margin: 80px;
+}
+@keyframes rotate{
+  100% {transform: rotate(360deg);}
+}
+.element {
+  width: 120px;
+  height: 120px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  line-height: 120px;
+}
+.element1 {
+  background: #FFCC00;
+  color: white;
+  transform-origin: top left;
+}
+.element2 {
+  background: #FF9900;
+  color: white;
+  transform-origin: top right;
+}
+.element3 {
+  background: #875678;
+  color: white;
+  transform-origin: bottom left;
+}
+.element4 {
+  background: #00E4F6;
+  color: white;
+  transform-origin: bottom right;
+}
+.container:hover .element{
+  animation: rotate 6s linear infinite;
+}
